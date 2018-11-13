@@ -29,6 +29,13 @@ h2 {
 	color: white;
 }
 
+h3 {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: helvetica;
+}
+
 #logo {
 	top: 0;
 	position: absolute;
@@ -169,4 +176,82 @@ h2 {
 #wheel2-next {
 	bottom: -11px;
 	left: 110px;
+}
+
+#menu {
+	top: 1000px;
+	left: 20px;
+	position: relative;
+	width: 1326px;
+	height: 400px;
+}
+
+#menu-line {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	height: 5px;
+	background-color: black;
+}
+
+.stop-button {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 4px;
+	background-color: white;
+	border-radius: 50%;
+	border: 5px;
+	border-style: solid;
+	border-color: black;
+}
+
+.stop-text {
+	position: absolute;
+	top: 20px;
+}
+
+.majorstuen-div {
+	left: 20px;
+}
+
+#majorstuen-text {
+	top: 15px;
+	left: -20px;
+}
+
+.national-div {
+	left: 350px;
+}
+
+#national-text {
+	top: 15px;
+	left: -20px;
+}
+
+.oslos-div {
+	left: 663px;
+}
+
+oslos-text {
+	top: 15px;
+	left: -20px;
+}
+
+.gronland-div {
+	left: 900px;
+}
+
+#gronland-text {
+	top: 15px;
+	left: -20px;
+}
+
+.toyen-div {
+	left: 1356px;
+}
+
+#toyen-text {
+	top: 15px;
+	left: -20px;
 }
