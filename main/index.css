@@ -46,6 +46,9 @@ body {
     width: 100px;
     background-color: red;
 }
+#test:hover {
+    background-color: purple;
+}
 
 #dot1{
   left: 100px;
