@@ -1,0 +1,12 @@
+body {
+  margin: 0;  
+}
+
+#container {
+    height:768px;
+    width: 1366px;
+    background-color: rgb(140,0,0);
+    position: relative;
+    margin: 0;
+}
+
