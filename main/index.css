@@ -41,6 +41,12 @@ body {
   position: absolute;
 }
 
+#test{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
 #dot1{
   left: 100px;
 }
