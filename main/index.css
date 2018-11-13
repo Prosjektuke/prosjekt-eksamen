@@ -41,6 +41,7 @@ body {
   position: absolute;
 }
 
+<<<<<<< HEAD
 #test{
     height: 100px;
     width: 100px;
@@ -49,6 +50,8 @@ body {
 #test:hover {
     background-color: purple;
 }
+=======
+>>>>>>> 2360bac558f6997cc536eb7854093833753b0ffe
 
 #dot1{
   left: 100px;
