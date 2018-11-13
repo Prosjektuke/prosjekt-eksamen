@@ -15,6 +15,7 @@ body {
   margin: 0;
 }
 
+<<<<<<< HEAD
 .dots{
   height: 20px;
   width: 20px;
@@ -56,3 +57,25 @@ body {
 #dot5{
   left: 1300px;
 }
+=======
+
+
+.box {
+ background-color: rgb(200, 200, 200);
+    border: 7px solid rgb(100, 100, 100);
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 200px;
+}
+
+.box:hover {
+    background-color: yellow;
+}
+
+
+
+
+
+
+>>>>>>> 7d27fa0bba8c3b9f3e621e00c80283af586f55a2
