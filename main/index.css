@@ -17,13 +17,14 @@ body {
     font-size: 500%;
     font-family: Helvetica;
     margin: 0;
+    padding: 0;
     text-align: center;
     position: relative;
     top: 10px;
 }
 
 #container{
-  position: relative;
+  position: absolute;
   width: 1536;
   top: 0px;
 }
@@ -79,6 +80,45 @@ body {
     top: 0px;
     bottom: 0;
     width: 1536px;
+}
+
+.destination{
+  font-family: Helvetica, sans-serif;
+}
+
+#majorstuen{
+  position: absolute;
+  left: 125px;
+  top: 330px;
+  margin: 0;
+}
+
+#nationaltheatret{
+  position: absolute;
+  left: 410px;
+  top: 330px;
+  margin: 0;
+}
+
+#jernbanetorget{
+  position: absolute;
+  left: 710px;
+  top: 330px;
+  margin: 0;
+}
+
+#gronland{
+  position: absolute;
+  left: 1030px;
+  top: 330px;
+  margin: 0;
+}
+
+#toyen{
+  position: absolute;
+  left: 1340px;
+  top: 330px;
+  margin: 0;
 }
 
 .box {
