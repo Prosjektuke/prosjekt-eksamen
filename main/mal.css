@@ -248,7 +248,9 @@ oslos-text {
 }
 
 .toyen-div {
-	left: 1356px;
+	position: absolute;
+	top: 6px;
+	left: 1336px;
 }
 
 #toyen-text {
