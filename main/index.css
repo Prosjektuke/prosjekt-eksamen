@@ -58,9 +58,9 @@ body {
 }
 
 .box {
- background-color: rgb(200, 200, 200);
+    background-color: rgb(200, 200, 200);
     border: 2px solid rgb(100, 100, 100);
-    padding: 1rem;
+    padding: 0;
     margin: 1rem;
     display: inline-block;
     width: 300px;
@@ -68,8 +68,29 @@ body {
     position: relative;
     top: 400px;
     left: 200px;
+    overflow: hidden;
 }
 
 .box:hover {
     background-color: yellow;
+}
+
+.boximages{
+  height: 100%;
+  margin: 0;
+  opacity: 0.8;
+  z-index: 50;
+}
+
+.boxoverlay{
+  margin: 0;
+  position: relative;
+  width: 100%;
+  background-color: rgb(255, 40, 40);
+  z-index: 100;
+}
+
+#imgbox2{
+  position: relative;
+  left: -18px;
 }
