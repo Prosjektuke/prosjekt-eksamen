@@ -19,7 +19,7 @@ body {
     
 }
 
-.dots{
+.dots {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -29,7 +29,6 @@ body {
   margin: 0;
   top: 300px;
   
-
 }
 
 .dots:hover{
