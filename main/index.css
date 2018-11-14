@@ -85,7 +85,8 @@ body {
 .boxoverlay{
   margin: 0;
   position: relative;
-  width: 100%;
+  width: 100px;
+  height: 100px;
   background-color: rgb(255, 40, 40);
   z-index: 100;
 }
