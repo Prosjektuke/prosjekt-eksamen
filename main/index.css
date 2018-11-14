@@ -37,30 +37,21 @@ body {
   width: 40px;
 }
 
-.mainline{
-  height: 5px;
-  width: 1200px;
-  background-color: rgb(200, 0, 0);
-  position: relative;
-  top: 308px;
-  left: 103px;
-  position: absolute;
-}
 
 #dot1{
-  left: 100px;
+  left: 154px;
 }
 #dot2{
-  left: 400px;
+  left: 454px;
 }
 #dot3{
-  left: 700px;
+  left: 754px;
 }
 #dot4{
-  left: 1000px;
+  left: 1054px;
 }
 #dot5{
-  left: 1300px;
+  left: 1344px;
 }
 
 #maincontent {
@@ -70,12 +61,17 @@ body {
 }
 
 .box {
- background-color: rgb(200, 200, 200);
-    border: 7px solid rgb(100, 100, 100);
-    padding: 1rem;
+    background-color: rgb(200, 200, 200);
+    border: 2px solid rgb(100, 100, 100);
+    padding: 0;
     margin: 1rem;
     display: inline-block;
-    width: 200px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 400px;
+    left: 200px;
+    overflow: hidden;
 }
 
 .box:hover {
@@ -96,8 +92,5 @@ body {
 #runding:hover{
             background-color: rgb(252, 189, 0);
         }
-
-
-
 
 
