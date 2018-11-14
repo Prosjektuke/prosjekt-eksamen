@@ -211,47 +211,23 @@ h3 {
 	top: 20px;
 }
 
-.majorstuen-div {
-	left: 20px;
+#majorstuen-button {
+	left: 30px;
 }
 
-#majorstuen-text {
-	top: 15px;
-	left: -20px;
+#national-button {
+	left: 301px;
 }
 
-.national-div {
-	left: 350px;
-}
-
-#national-text {
-	top: 15px;
-	left: -20px;
-}
-
-.oslos-div {
+#oslos-button {
+	position: absolute;
 	left: 663px;
 }
 
-oslos-text {
-	top: 15px;
-	left: -20px;
+#gronland-button {
+	left: 951px;
 }
 
-.gronland-div {
-	left: 900px;
-}
-
-#gronland-text {
-	top: 15px;
-	left: -20px;
-}
-
-.toyen-div {
-	left: 1356px;
-}
-
-#toyen-text {
-	top: 15px;
-	left: -20px;
+#toyen-button {
+	left: 1276px;
 }
