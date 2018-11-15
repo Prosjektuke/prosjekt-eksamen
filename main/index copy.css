@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  background-color: rgb(248, 228, 162);
+  width: 1536;
+}
+
+#container {
+    height:737px;
+    width: 1536px;
+    background-color: rgb(251, 244, 218);
+    position: relative;
+    margin-top: 0;
+}
+
+#headerone{
+    color: rgb(255, 45, 45);
+    font-size: 500%;
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+#container{
+  position: absolute;
+  width: 1536;
+  top: 0px;
+}
+
+#line{
+  height: 5px;
+  width: 1536px;
+  background-color:rgb(255, 45, 45);
+  top: 308px;
+  position: absolute;
+  margin: 0;
+  z-index: 100;
+}
+
+.dots {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  background-color:rgb(255, 45, 45);
+  z-index: 50;
+  margin: 0;
+  top: 300px;
+  
+}
+
+.dots:hover{
+  height: 40px;
+  width: 40px;
+}
+
+
+#dot1{
+  left: 154px;
+}
+#dot2{
+  left: 454px;
+}
+#dot3{
+  left: 754px;
+}
+#dot4{
+  left: 1054px;
+}
+#dot5{
+  left: 1354px;
+}
+
+#maincontent {
+    position: relative;
+    margin: 0;
+    left: 50px;
+    top: 0px;
+    bottom: 0;
+    width: 1536px;
+}
+
+.destination{
+  font-family: Helvetica, sans-serif;
+}
+
+#majorstuen{
+  position: absolute;
+  left: 125px;
+  top: 330px;
+  margin: 0;
+}
+
+#nationaltheatret{
+  position: absolute;
+  left: 410px;
+  top: 330px;
+  margin: 0;
+}
+
+#jernbanetorget{
+  position: absolute;
+  left: 710px;
+  top: 330px;
+  margin: 0;
+}
+
+#gronland{
+  position: absolute;
+  left: 1030px;
+  top: 330px;
+  margin: 0;
+}
+
+#toyen{
+  position: absolute;
+  left: 1340px;
+  top: 330px;
+  margin: 0;
+}
+
+.box {
+    background-color: rgb(200, 200, 200);
+    border: 2px solid rgb(100, 100, 100);
+    padding: 0;
+    margin: 1rem;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    overflow: hidden;
+}
+
+.box:hover {
+    background-color: yellow;
+}
+
+.boximages{
+  height: 100%;
+  margin: 0;
+  opacity: 0.8;
+  z-index: 50;
+  position: relative;
+}
+
+.boxoverlay{
+  margin: 0;
+  position: relative;
+  width: 100%;
+  background-color: rgb(255, 40, 40);
+  z-index: 100;
+}
+
+#imgbox2{
+  position: relative;
+  left: -18px;
+}
+
+ #runding{
+            width: 120px;
+            height: 120px;
+            background-color:rgb(207, 62, 20);
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+            position: relative;
+            transition: all 2s linear 0s;
+            margin: 0;
+        }
+
+#runding:hover{
+            background-color: rgb(252, 189, 0);
+        }
+
+.boxoverlay{
+  margin: 0;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 40, 40);
+  z-index: 100;
+}
+
+
+#bunn{
+  position: relative;
+  top: 200px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
