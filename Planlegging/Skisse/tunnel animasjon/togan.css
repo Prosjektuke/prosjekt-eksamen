@@ -1,0 +1,95 @@
+body {
+   margin: 0;
+    background-color: rgb(255,255,255);
+}
+
+#tunnelview {
+    background-color: rgb(255,255,255);
+    width: 1366px;
+    height: 720px;
+    top: 50px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+#train {
+    z-index: 100;
+    position: absolute;
+    bottom: -175px;
+    left: 100px;
+    height: 500px;
+    animation: togpow 7s ease forwards;
+}
+
+#parong {
+    z-index: 99;
+    position: absolute;
+    bottom: 0px;
+    height: -6000px;
+    left: 0;
+    animation: tunneltravel 7s ease forwards;
+}
+
+@keyframes tunneltravel {
+    0% {
+        left: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        left: -3400px; 
+       opacity: 0;
+    }
+    100% {
+        left: -30000px;
+        opacity: 0;
+    }
+}
+
+@keyframes togpow {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+        left: 400px;
+    }
+    100% {
+        opacity: 0;
+        left: 4000px;
+
+    }
+}
+
+#insiden {
+    z-index: 400;
+    height: 500px;
+    width: 200px;
+    left: 400px;
+    top: 150px;
+    position: relative;
+    background-color: rgb(0,0,0);
+    animation: insidenn 3s ease forwards;
+}
+
+@keyframes insidenn {
+    0% {
+    left: 1000px;
+    60% {
+    left: 600px;   
+        }
+    80% {
+    left: 600px;
+        }
+    }
+    100% {
+    left: -1000px;
+    }
+    
+}
