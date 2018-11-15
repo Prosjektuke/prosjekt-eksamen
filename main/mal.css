@@ -56,11 +56,19 @@ a {
 	top: 200px;
 }
 
+#info-box2{
+	top: 50px;
+	left: 650px;
+	position: absolute;
+
+}
+
 #info-box1 {}
 
-#info-box2 {
-	top: 200px;
-	left: 
+#bunnlinja{
+	top: -400px;
+	position: absolute;
+	margin: 0;
 }
 
 #prev {
