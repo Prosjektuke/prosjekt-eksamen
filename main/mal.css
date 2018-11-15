@@ -46,7 +46,20 @@ h3 {
 	top: 200px;
 }
 
+#info-box2{
+	top: 50px;
+	left: 650px;
+	position: absolute;
+
+}
+
 #info-box1 {}
+
+#bunnlinja{
+	top: -400px;
+	position: absolute;
+	margin: 0;
+}
 
 #prev {
 	top: 1200px;
