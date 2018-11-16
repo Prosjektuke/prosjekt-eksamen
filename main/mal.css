@@ -226,7 +226,7 @@ a {
 	border-radius: 50%;
 	border: 5px;
 	border-style: solid;
-	border-color: black;
+	border-color: rgb(0, 0, 0);
 }
 
 .stop-text {
@@ -238,14 +238,14 @@ a {
 	width: 40px;
 	height: 40px;
 	top: -4px;
+	border-color: rgb(0, 159, 227);
 }
 
 .stop-button:hover .stop-text {
 	position: absolute;
 	top: 30px;
 	font-size: 20px;
-	top: 38px
-	
+	top: 38px;
 }
 
 #majorstuen-button {
@@ -287,13 +287,6 @@ a {
 #toyen-text {
 	left: -10px
 }
-
-
-
-
-
-
-
 
 #top {
 	position: fixed;
