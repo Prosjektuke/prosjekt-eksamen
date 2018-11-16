@@ -5,7 +5,6 @@
 
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="mal.css">
-	<link rel="stylesheet" type="text/css" href="tunnel animasjon/togan.css">
 
 </head>
 
@@ -14,111 +13,101 @@
 	<div id=logo><a href="index.html"><img src="images/logo.png" width="100" height="100"></a></div>
 
 	<!--Div tittel-->
-	<div id=stop class=info-box>
+	
+	<div id=stop>
 		<h1>NAVN PÅ STOPPET</h1>
 	</div>
 
-	<!--Div class innhold 1-->
+	<!--Div for toganimasjonen-->
 	<div id="tunnelview">
-        <img id="train" src="tunnel animasjon/image/hvittog.png">
+		<img id="train" src="images/trainanimation.png">
 		<!-- <img id="tunnel" src="image/tunnel1.jpg"> -->
-        <img id="parong" src="tunnel animasjon/image/erregreit2.jpg">
-		</div>	<!-- 7500 x 600--> 
-		<p id="station-name">Majorstuen</p>
-		
-	<!--Div class innhold 2-->
-	<div id=info-box2 class=info-box>
-		<div id=text2 class=content2>
-			<p>Innhold</p>
+		<img id="parong" src="images/trainbackground.jpg">
+	</div> <!-- 7500 x 600-->
+	<p id="station-name">Majorstuen</p>
+
+	<!--Div innhold på websiden-->
+		<div id=info-box>
+			<p>Innhold på websiden</p>
 		</div>
-		<div id=picture2 class=content2><img src="images%2520mal/logo-placeholder.png"></div>
-	</div>
-
-	<!--Div class innhold 3
-	<div id=info-box3 class=info-box>
-		<div id=text3 class=content3>
-			<p>Innhold2</p>
-		</div>
-		<div id=picture3 class=content3></div>
-	</div>
--->
-
-<div id="bunnlinja">
-	<!--Div forrige knapp-->
-	<div id=prev>
-		<div id=text-prev>
-			<h3>FORRIGE</h3>
-		</div>
-		<div id=train></div>
-		<div id=door1-prev class=door></div>
-		<div id=door2-prev class=door></div>
-		<div id=wheel1-prev class=wheel></div>
-		<div id=wheel2-prev class=wheel></div>
-		<div id=window1-prev class=window></div>
-		<div id=window2-prev class=window></div>
-		<div id=window3-prev class=window></div>
-		<div id=window4-prev class=window></div>
-		<div id=window5-prev class=window></div>
-	</div>
 
 
-	<!--Div neste knapp-->
-	<div id=next>
-		<div id=text-next>
-			<h3>NESTE</h3>
-		</div>
-		<div id=door1-next class=door></div>
-		<div id=door2-next class=door></div>
-		<div id=wheel1-next class=wheel></div>
-		<div id=wheel2-next class=wheel></div>
-		<div id=window1-next class=window></div>
-		<div id=window2-next class=window></div>
-		<div id=window3-next class=window></div>
-		<div id=window4-next class=window></div>
-		<div id=window5-next class=window></div>
-	</div>
-
-	<!--Div menylinje-->
-	<div id=menu>
-		<div id=menu-line></div>
-		<div id=majorstuen-button class=stop-button>
-			<a href=majorstuen.html></a>
-			<div id=majorstuen-text class=stop-text>
-				<a href=majorstuen.html>Majorstuen</a>
+	<div id="bunnlinja">
+		<!--Div forrige knapp-->
+		<div id=prev>
+			<div id=text-prev>
+				<a class="buttons" href="">FORRIGE</a>
 			</div>
+			<div id=train></div>
+			<div id=door1-prev class=door></div>
+			<div id=door2-prev class=door></div>
+			<div id=wheel1-prev class=wheel></div>
+			<div id=wheel2-prev class=wheel></div>
+			<div id=window1-prev class=window></div>
+			<div id=window2-prev class=window></div>
+			<div id=window3-prev class=window></div>
+			<div id=window4-prev class=window></div>
+			<div id=window5-prev class=window></div>
 		</div>
-		<div id=national-button class=stop-button>
-			<a href=national.html></a>
-			<div id=national-text class=stop-text>
-				<a href=national.html>National</a>
+
+
+		<!--Div neste knapp-->
+		<div id=next>
+			<div id=text-next>
+				<a class="buttons" href="">NESTE</a>
 			</div>
+			<div id=door1-next class=door></div>
+			<div id=door2-next class=door></div>
+			<div id=wheel1-next class=wheel></div>
+			<div id=wheel2-next class=wheel></div>
+			<div id=window1-next class=window></div>
+			<div id=window2-next class=window></div>
+			<div id=window3-next class=window></div>
+			<div id=window4-next class=window></div>
+			<div id=window5-next class=window></div>
 		</div>
-		<div id=oslos-button class=stop-button>
-			<a href=oslos.html></a>
-			<div id=oslos-text class=stop-text>
-				<a href=oslos.html>OsloS</a>
+
+		<!--Div menylinje-->
+		<div id=menu>
+			<div id=menu-line></div>
+			<div id=majorstuen-button class=stop-button>
+				<a href=majorstuen.html></a>
+				<div id=majorstuen-text class=stop-text>
+					<a href=majorstuen.html>Majorstuen</a>
+				</div>
 			</div>
-		</div>
-		<div id=gronland-button class=stop-button>
-			<a href=gronland.html></a>
-			<div id=gronland-text class=stop-text>
-				<a href=gronland.html>Grønland</a>
+			<div id=national-button class=stop-button>
+				<a href=national.html></a>
+				<div id=national-text class=stop-text>
+					<a href=national.html>National</a>
+				</div>
 			</div>
-		</div>
-		<div id=toyen-button class=stop-button>
-			<a href=toyen.html></a>
-			<div id=toyen-text class=stop-text>
-				<a href=toyen.html>Tøyen</a>
+			<div id=oslos-button class=stop-button>
+				<a href=oslos.html></a>
+				<div id=oslos-text class=stop-text>
+					<a href=oslos.html>OsloS</a>
+				</div>
 			</div>
-		</div>
+			<div id=gronland-button class=stop-button>
+				<a href=gronland.html></a>
+				<div id=gronland-text class=stop-text>
+					<a href=gronland.html>Grønland</a>
+				</div>
+			</div>
+			<div id=toyen-button class=stop-button>
+				<a href=toyen.html></a>
+				<div id=toyen-text class=stop-text>
+					<a href=toyen.html>Tøyen</a>
+				</div>
+			</div>
 
 
 
 
 
 
-<button onclick="topFunction()" id="top" title="Tilbake til toppen">Tilbake til toppen</button>
-		
+			<button onclick="topFunction()" id="top" title="Tilbake til toppen">Tilbake til toppen</button>
+
 </body>
 
 </html>

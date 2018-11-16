@@ -10,6 +10,7 @@ h1 {
 	font-weight: bold;
 	font-family: helvetica;
 	text-align: center;
+	color: black;
 }
 
 h2 {
@@ -19,14 +20,6 @@ h2 {
 	font-family: helvetica;
 	color: black;
 	text-align: center;
-}
-
-h3 {
-	display: block;
-	font-size: 15px;
-	font-weight: bold;
-	font-family: helvetica;
-	color: white;
 }
 
 p {
@@ -46,33 +39,52 @@ a {
 	text-decoration: none;
 }
 
+a.buttons {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: helvetica;
+	color: white;
+}
+
 #logo {
-	top: 0;
-	position: absolute;
-}
-
-.info-box {
+	top: 0px;
 	position: relative;
-	top: 200px;
+
 }
 
-#info-box2{
+#stop {
+	position: absolute;
+	left: 500px;
+}
+
+#info-box {
+	position: absolute;
+	top: 500px;
+	left: 500px;
+}
+
+
+
+#stop {
+	position: absolute;
+	top: 50px;
+}
+
+#info-box2 {
 	top: 50px;
 	left: 650px;
 	position: absolute;
-
 }
 
-#info-box1 {}
-
-#bunnlinja{
-	top: -400px;
+#bunnlinja {
+	top: 1200px;
 	position: absolute;
 	margin: 0;
 }
 
 #prev {
-	top: 1400px;
+	top: 1100px;
 	left: 30px;
 	position: absolute;
 	width: 130px;
@@ -81,7 +93,7 @@ a {
 }
 
 #next {
-	top: 1400px;
+	top: 1100px;
 	right: 30px;
 	position: absolute;
 	width: 130px;
@@ -91,7 +103,7 @@ a {
 
 #text-prev {
 	position: absolute;
-	bottom: -8px;
+	bottom: 5px;
 	left: 31px;
 }
 
@@ -159,8 +171,8 @@ a {
 
 #text-next {
 	position: absolute;
-	bottom: -8px;
-	left: 31px;
+	bottom: 5px;
+	left: 40px;
 }
 
 #door1-next {
@@ -213,7 +225,7 @@ a {
 	position: absolute;
 	top: 20px;
 	width: 100%;
-	height: 5px;
+	height: 3px;
 	background-color: black;
 }
 
@@ -224,7 +236,7 @@ a {
 	top: 4px;
 	background-color: white;
 	border-radius: 50%;
-	border: 5px;
+	border: 3px;
 	border-style: solid;
 	border-color: rgb(0, 0, 0);
 }
@@ -234,18 +246,17 @@ a {
 	top: 30px;
 }
 
-.stop-button:hover{
+.stop-button:hover {
 	width: 40px;
 	height: 40px;
-	top: -4px;
+	top: -2px;
 	border-color: rgb(0, 159, 227);
 }
 
 .stop-button:hover .stop-text {
 	position: absolute;
-	top: 30px;
+	top: 36px;
 	font-size: 20px;
-	top: 38px;
 }
 
 #majorstuen-button {
@@ -292,4 +303,103 @@ a {
 	position: fixed;
 	right: 10px;
 	bottom: 20px;
+}
+
+#tunnelview {
+	background-color: rgb(255, 255, 255);
+	width: 1366px;
+	height: 300px;
+	top: 150px;
+	left: 0px;
+	position: absolute;
+	overflow: hidden;
+	margin: auto;
+
+}
+
+#station-name {
+	font-size: 20px;
+	top: 225px;
+	font-family: Helvetica;
+	left: 581px;
+	position: absolute;
+	z-index: 200;
+	color: white;
+	animation: train-stop 7s;
+}
+
+@keyframes train-stop {
+	0% {
+		opacity: 0;
+	}
+
+	99% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		color: white;
+	}
+}
+
+#train {
+	z-index: 100;
+	position: absolute;
+	bottom: -205px;
+	left: 100px;
+	height: 500px;
+	animation: togpow 7s ease forwards;
+}
+
+#parong {
+	z-index: 99;
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	left: 0;
+	animation: tunneltravel 7s ease forwards;
+}
+
+
+@keyframes tunneltravel {
+	0% {
+		left: 0px;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	80% {
+		left: -2250px;
+		opacity: 1;
+	}
+
+	100% {
+		left: -2250px;
+		opacity: 1;
+	}
+}
+
+@keyframes togpow {
+	0% {
+		left: 0;
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 1;
+		left: 400px;
+	}
+
+	100% {
+		opacity: 1;
+		left: 400px;
+
+	}
 }
