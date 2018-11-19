@@ -21,7 +21,7 @@ h2 {
 	text-align: center;
 }
 
-h3{
+h3 {
 	display: block;
 	font-size: 20px;
 	font-weight: bold;
@@ -64,7 +64,8 @@ a.buttons {
 
 #stop {
 	position: absolute;
-	left: 500px;
+	width: 1366px;
+	text-align: center;
 }
 
 #info-box {
@@ -329,14 +330,17 @@ a.buttons {
 
 #station-name {
 	font-size: 20px;
-	top: 225px;
 	font-family: Helvetica;
-	left: 581px;
-	position: absolute;
 	z-index: 200;
 	color: white;
 	animation: train-stop 7s;
+	position: absolute;
+	top: 245px;
+	left: 570px;
+	width: 120px;
+	text-align: center;
 }
+
 
 @keyframes train-stop {
 	0% {
