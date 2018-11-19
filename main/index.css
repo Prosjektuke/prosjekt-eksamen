@@ -13,6 +13,7 @@ body {
     background-color: rgb(191, 234, 255);
     position: absolute;
     margin: 0;
+    overflow: hidden;
 }
 
 #overskrift{
@@ -29,7 +30,57 @@ body {
   top: -300px;
 }
 
+.cloud{
+  z-index: 10;
+  position: absolute;
+  margin: 0;
+}
 
+
+#cloud1{
+  top: 0px;
+  height: 90px;
+}
+#cloud2{
+  top: 0px;
+  height: 100px;
+}
+#cloud3{
+  top: 0px;
+  height: 110px;
+}
+#cloud4{
+  top: 0px;
+  height: 180px;
+}
+#cloud5{
+  top: 0px;
+  height: 130px;
+}
+#cloud6{
+  
+  height: 70px;
+}
+#cloud7{
+  height: 200px; 
+  z-index: 11;
+  animation-name: moving-clouds;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+@keyframes moving-clouds{
+  0%{
+    left: 100px;
+    top: 100px;
+  }
+
+  100%{
+    right: 300px;
+    top: 100px;
+  }
+}
 
 #maincontent {
     position: relative;
