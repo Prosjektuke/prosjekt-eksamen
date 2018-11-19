@@ -1,6 +1,6 @@
 body {
-	height: 1500px;
-	width: 1366px;
+	height: 900px;
+	width: 4098px;
 	margin: 0;
 }
 
@@ -36,7 +36,6 @@ p {
 	font-family: helvetica;
 	color: black;
 	text-align: center;
-
 }
 
 a {
@@ -68,34 +67,38 @@ a.buttons {
 	text-align: center;
 }
 
-#info-box {
+.info-boxes{
 	position: absolute;
-	top: 500px;
-	left: 100px;
-	right: 100px;
-	bottom: 500px;
+	top: 450px;
+	bottom: 700px;
+	width: 1166px;
 }
 
+#info-box1 {
+	left: 100px;
+}
+
+#info-box2 {
+	left: 1466px;
+}
+
+
+#info-box3 {
+	left: 2832px;
+}
+
+#bottom-line {
+	bottom: 0;
+	position: fixed;
+}
 
 #stop {
 	position: absolute;
 	top: 50px;
 }
 
-#info-box2 {
-	top: 50px;
-	left: 200px;
-	position: absolute;
-}
-
-#bunnlinja {
-	top: 1200px;
-	position: absolute;
-	margin: 0;
-}
-
 #prev {
-	top: 1100px;
+	top: 0px;
 	left: 30px;
 	position: absolute;
 	width: 130px;
@@ -104,7 +107,7 @@ a.buttons {
 }
 
 #next {
-	top: 1100px;
+	top: 0px;
 	right: 30px;
 	position: absolute;
 	width: 130px;
@@ -225,7 +228,7 @@ a.buttons {
 }
 
 #menu {
-	top: 1200px;
+	top: 60px;
 	left: 20px;
 	position: relative;
 	width: 1326px;
@@ -254,6 +257,7 @@ a.buttons {
 
 .stop-text {
 	position: absolute;
+	text-align: center;
 	top: 30px;
 }
 
@@ -270,44 +274,44 @@ a.buttons {
 	font-size: 20px;
 }
 
-#majorstuen-button {
+#jungle-button {
 	left: 30px;
 }
 
-#majorstuen-text {
-	left: -25px;
+#jungle-text {
+	left: -30px;
 }
 
-#national-button {
+#heaven-button {
 	left: 340px;
 }
 
-#national-text {
-	left: -20px;
+#heaven-text {
+	left: -30px;
 }
 
-#oslos-button {
+#atlantis-button {
 	left: 633px;
 }
 
-#oslos-text {
-	left: -10px;
-}
-
-#gronland-button {
-	left: 946px;
-}
-
-#gronland-text {
+#atlantis-text {
 	left: -20px;
 }
 
-#toyen-button {
+#space-button {
+	left: 946px;
+}
+
+#space-text {
+	left: -60px;
+}
+
+#mom-button {
 	left: 1256px;
 }
 
-#toyen-text {
-	left: -10px
+#mom-text {
+	left: -25px
 }
 
 #top {
@@ -358,10 +362,10 @@ a.buttons {
 
 #train {
 	z-index: 100;
-	position: absolute;
-	bottom: -205px;
+	position: fixed;
 	left: 100px;
 	height: 500px;
+	top: 155px;
 	animation: togpow 7s ease forwards;
 }
 
