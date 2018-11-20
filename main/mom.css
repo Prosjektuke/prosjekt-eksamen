@@ -1,12 +1,118 @@
 #container{
-    background-color: rgb(200, 70, 70);
-    height: 100%;
+    background-color: rgb(255, 203, 147);
+    height: 900px;
+    margin: 0;
 }
 
 .window, .door{
-    background-color: rgb(200, 70, 70);
+    background-color: rgb(221, 60, 60);
 }
 
 .stop-button{
     background-color: rgb(200, 70, 70);
+}
+
+#story1{
+    position: relative;
+    left: 1600px;
+}
+
+#dragon{
+    position: relative;
+    margin: 0;
+    top: 50px;
+    height: 240px;
+    left: 0px;
+    z-index: 30;
+    animation-name: dragonfly;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes dragonfly{
+    0%{
+        left: 0px;
+        top: 50px;
+    }
+
+    50%{
+        left: 5px;
+        top: 30px;
+    }
+
+    100%{
+        left: 0px;
+        top: 50px;
+    }
+}
+
+#spiderman{
+    top: -700px;
+    position: relative;
+    left: 150px;
+    animation-name: spiderman-drop;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    height: 150px;
+    margin: 0;
+    z-index: 30;
+}
+
+@keyframes spiderman-drop{
+    0%{
+        top: -600px;
+    }
+    5%{
+        top: -200px;
+    }
+    100%{
+        top: -600px;
+    }
+}
+
+#colors{
+    position: absolute;
+    margin: 0;
+    height: 300px;
+    z-index: 10;
+    left: 100px;
+}
+
+.rockets{
+
+}
+
+#rocket1{
+    position: absolute;
+    margin: 0;
+    top: 1000px;
+    z-index: 10;
+    height: 1300px;
+    left: 1000px;
+    animation-name: rocketlaunch;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    z-index: 70;
+    animation-delay: 10s;
+}
+
+@keyframes rocketlaunch{
+    0%{
+        top: 1000px;
+        left: 800px;
+    }
+
+    100%{
+        top: -2000px;
+        left: 200px;
+    }
+}
+
+#castle{
+    margin: 0;
+    position: absolute;
+    top: -110px;
+    left: 350px;
+    z-index: 20;
 }
