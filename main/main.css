@@ -341,9 +341,23 @@ a.buttons {
 	left: 1250px;
 	height: 300px;
 	z-index: 70;
-	opacity: 1;
 	animation: train-stop 7s;
 }
+
+@keyframes train-stop {
+	0% {
+		z-index: 0;
+	}
+
+	99% {
+		z-index: 0;
+	}
+
+	100% {
+		z-index: 70;
+	}
+}
+
 
 #station-name {
 	font-size: 20px;
@@ -352,7 +366,7 @@ a.buttons {
 	color: white;
 	animation: train-stop 7s;
 	position: absolute;
-	top: 220px;
+	top: 245px;
 	left: 570px;
 	width: 120px;
 	text-align: center;
@@ -362,8 +376,7 @@ a.buttons {
 	z-index: 50;
 	position: fixed;
 	left: 100px;
-	height: 500px;
-	top: 155px;
+	top: 155px !important;
 	animation: togpow 7s ease forwards;
 }
 
