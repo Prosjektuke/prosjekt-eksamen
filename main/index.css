@@ -16,6 +16,11 @@ body {
     overflow: hidden;
 }
 
+#sky{
+  position: absolute;
+  margin: 0;
+}
+
 #overskrift{
   position: relative;
   top: 200px;
@@ -35,7 +40,7 @@ body {
 }
 
 #cloud1{
-  top: 0px;
+  top: 400px;
   height: 90px;
 }
 #cloud2{
