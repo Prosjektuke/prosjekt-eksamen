@@ -65,26 +65,37 @@ a.buttons {
 	position: absolute;
 	top: 450px;
 	bottom: 700px;
-	width: 1166px;
+	width: 700px;
 }
 
 #info-box1 {
-	left: 100px;
+	left: 300px;
 }
 
 #info-box2 {
-	left: 1466px;
+	left: 1666px;
 }
 
 
 #info-box3 {
-	left: 2832px;
+	left: 3032px;
+}
+
+#menu {
+	top: 60px;
+	left: 2%;
+	right: 20px;
+	position: relative;
+	width: 96%;
+	height: 150px;
+	z-index: 100;
 }
 
 #bottom-line {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	background-color: rgb(100, 100, 100, 0.1);
 	position: fixed;
 	z-index: 1000;
 }
@@ -96,41 +107,42 @@ a.buttons {
 
 #prev {
 	top: 10px;
-	left: 30px;
+	left: 2%;
 	position: absolute;
-	width: 130px;
+	width: 110px;
 	height: 40px;
 	background-color: black;
 }
 
 #next {
 	top: 10px;
-	right: 30px;
+	right: 2%;
 	position: absolute;
-	width: 130px;
+	width: 110px;
 	height: 40px;
 	background-color: black;
 }
 
-#text-prev {
+.roof {
 	position: absolute;
-	bottom: 5px;
-	left: 31px;
+	width: 130px;
+	height: 5px;
+	top: 0px;
+	left: -10px;
+	background-color: black;
 }
 
-.door {
+.floor {
 	position: absolute;
-	width: 10px;
-	height: 30px;
-	bottom: 5px;
+	width: 130px;
+	height: 5px;
+	bottom: 0px;
+	left: -10px;
+	background-color: black;
 }
 
-#door1-prev {
-	left: 0;
-}
-
-#door2-prev {
-	left: 120px;
+#floor-next {
+	left: -10px;
 }
 
 .window {
@@ -138,26 +150,27 @@ a.buttons {
 	width: 10px;
 	height: 10px;
 	bottom: 25px;
+	background-color: white;
 }
 
 #window1-prev {
-	left: 20px;
+	left: 10px;
 }
 
 #window2-prev {
-	left: 40px;
+	left: 30px;
 }
 
 #window3-prev {
-	left: 60px;
+	left: 50px;
 }
 
 #window4-prev {
-	left: 80px;
+	left: 70px;
 }
 
 #window5-prev {
-	left: 100px;
+	left: 90px;
 }
 
 .wheel {
@@ -175,41 +188,41 @@ a.buttons {
 
 #wheel2-prev {
 	bottom: -11px;
-	left: 110px;
+	left: 90px;
+}
+
+#text-prev {
+	position: absolute;
+	bottom: 5px;
+	width: 110px;
+	text-align: center;
 }
 
 #text-next {
 	position: absolute;
 	bottom: 5px;
-	left: 40px;
-}
-
-#door1-next {
-	left: 0;
-}
-
-#door2-next {
-	left: 120px;
+	width: 110px;
+	text-align: center;
 }
 
 #window1-next {
-	left: 20px;
+	left: 10px;
 }
 
 #window2-next {
-	left: 40px;
+	left: 30px;
 }
 
 #window3-next {
-	left: 60px;
+	left: 50px;
 }
 
 #window4-next {
-	left: 80px;
+	left: 70px;
 }
 
 #window5-next {
-	left: 100px;
+	left: 90px;
 }
 
 #wheel1-next {
@@ -219,22 +232,12 @@ a.buttons {
 
 #wheel2-next {
 	bottom: -11px;
-	left: 110px;
-}
-
-#menu {
-	top: 60px;
-	left: 20px;
-	right: 20px;
-	position: relative;
-	width: 1326px;
-	height: 150px;
-	z-index: 100;
+	left: 90px;
 }
 
 #menu-line {
-	position: absolute;
-	top: 20px;
+	position: relative;
+	top: 18px;
 	width: 100%;
 	height: 3px;
 	background-color: black;
@@ -250,18 +253,22 @@ a.buttons {
 	border: 3px;
 	border-style: solid;
 	border-color: rgb(0, 0, 0);
+	text-align: center;
 }
 
 .stop-text {
 	position: absolute;
-	text-align: center;
+	width: 100px;
 	top: 30px;
+	text-align: center;
 }
 
 .stop-button:hover {
+	position: absolute;
 	width: 40px;
 	height: 40px;
 	top: -2px;
+	left: -10px;
 	border-color: rgb(0, 159, 227);
 }
 
@@ -272,7 +279,7 @@ a.buttons {
 }
 
 #jungle-button {
-	left: 30px;
+	left: 5%;
 }
 
 #jungle-text {
@@ -280,7 +287,7 @@ a.buttons {
 }
 
 #heaven-button {
-	left: 340px;
+	left: 27.5%;
 }
 
 #heaven-text {
@@ -288,15 +295,15 @@ a.buttons {
 }
 
 #atlantis-button {
-	left: 633px;
+	left: 50%;
 }
 
 #atlantis-text {
-	left: -20px;
+	left: -35px;
 }
 
 #space-button {
-	left: 946px;
+	left: 72.5%;
 }
 
 #space-text {
@@ -304,11 +311,11 @@ a.buttons {
 }
 
 #mom-button {
-	left: 1256px;
+	left: 95%;
 }
 
 #mom-text {
-	left: -25px
+	left: -35px
 }
 
 #top {
@@ -345,7 +352,7 @@ a.buttons {
 	color: white;
 	animation: train-stop 7s;
 	position: absolute;
-	top: 245px;
+	top: 220px;
 	left: 570px;
 	width: 120px;
 	text-align: center;
