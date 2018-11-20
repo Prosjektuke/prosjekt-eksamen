@@ -27,59 +27,104 @@ body {
   height: 400px;
   margin: 0;
   left: 100px;
+  z-index: 10;
 }
 
 #container{
   position: absolute;
-  width: 1536;
+  width: 1536px;
   top: -300px;
 }
 
-.clouds{
-  animation-name: moving-clouds;
+.cloud{
+  z-index: -100;
 }
 
 #cloud1{
+  height: 200px;
+  position: absolute;
+  z-index: 0;
+  left: -300px;
   top: 400px;
-  height: 90px;
+  animation-name: moving-clouds;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 #cloud2{
-  top: 0px;
-  height: 100px;
+  height: 210px;
+  position: absolute;
+  z-index: 0;
+  left: -300px;
+  top: 700px;
+  animation-name: moving-clouds;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 #cloud3{
-  top: 0px;
-  height: 110px;
+  height: 150px;
+  position: absolute;
+  z-index: 0;
+  left: -300px;
+  top: 200px;
+  animation-name: moving-clouds;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 #cloud4{
-  top: 0px;
   height: 180px;
+  position: absolute;
+  z-index: 0;
+  left: -300px;
+  top: 800px;
+  animation-name: moving-clouds;
+  animation-duration: 250s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 #cloud5{
-  top: 0px;
-  height: 130px;
+  height: 190px;
+  position: absolute;
+  z-index: 0;
+  left: -300px;
+  top: 300px;
+  animation-name: moving-clouds;
+  animation-duration: 200s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 #cloud6{
-  
-  height: 70px;
+  height: 170px;
+  position: absolute;
+  z-index: 0;
+  left: -300px;
+  top: 1000px;
+  animation-name: moving-clouds;
+  animation-duration: 150s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
 }
 #cloud7{
+  position: absolute;
   height: 200px; 
-  z-index: 11;
-  animation-duration: 20s;
+  z-index: 0;
+  left: -300px;
+  top: 100px;
+  animation-name: moving-clouds;
+  animation-duration: 100s;
   animation-iteration-count: infinite;
-  animation-delay: 3s;
+  animation-delay: 0s;
 }
 
 @keyframes moving-clouds{
   0%{
-    left: 100px;
-    top: 100px;
+    left: -300px;
   }
 
   100%{
-    left: 300px;
-    top: 100px;
+    left: 1800px;
   }
 }
 
