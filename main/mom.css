@@ -33,6 +33,7 @@
     animation-name: dragonfly;
     animation-iteration-count: infinite;
     animation-duration: 6s;
+    z-index: 12;
 }
 
 @keyframes dragonfly{
