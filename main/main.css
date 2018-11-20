@@ -61,7 +61,7 @@ a.buttons {
 	text-align: center;
 }
 
-.info-boxes{
+.info-boxes {
 	position: absolute;
 	top: 450px;
 	bottom: 700px;
@@ -82,6 +82,8 @@ a.buttons {
 }
 
 #bottom-line {
+	left: 0;
+	right: 0;
 	bottom: 0;
 	position: fixed;
 }
@@ -92,7 +94,7 @@ a.buttons {
 }
 
 #prev {
-	top: 0px;
+	top: 10px;
 	left: 30px;
 	position: absolute;
 	width: 130px;
@@ -101,7 +103,7 @@ a.buttons {
 }
 
 #next {
-	top: 0px;
+	top: 10px;
 	right: 30px;
 	position: absolute;
 	width: 130px;
@@ -119,7 +121,6 @@ a.buttons {
 	position: absolute;
 	width: 10px;
 	height: 30px;
-	background-color: white;
 	bottom: 5px;
 }
 
@@ -135,7 +136,6 @@ a.buttons {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	background-color: white;
 	bottom: 25px;
 }
 
@@ -224,9 +224,11 @@ a.buttons {
 #menu {
 	top: 60px;
 	left: 20px;
+	right: 20px;
 	position: relative;
 	width: 1326px;
 	height: 150px;
+	z-index: 100;
 }
 
 #menu-line {
@@ -315,8 +317,7 @@ a.buttons {
 }
 
 #tunnelview {
-	background-color: rgb(255, 255, 255);
-	width: 1366px;
+	width: 4098px;
 	height: 300px;
 	top: 150px;
 	left: 0px;
@@ -326,10 +327,20 @@ a.buttons {
 
 }
 
+#tunnelframe {
+	position: absolute;
+	top: 0px;
+	left: 1250px;
+	height: 300px;
+	z-index: 70;
+	opacity: 1;
+	animation: train-stop 7s;
+}
+
 #station-name {
 	font-size: 20px;
 	font-family: Helvetica;
-	z-index: 200;
+	z-index: 100;
 	color: white;
 	animation: train-stop 7s;
 	position: absolute;
@@ -337,6 +348,24 @@ a.buttons {
 	left: 570px;
 	width: 120px;
 	text-align: center;
+}
+
+#train {
+	z-index: 50;
+	position: fixed;
+	left: 100px;
+	height: 500px;
+	top: 155px;
+	animation: togpow 7s ease forwards;
+}
+
+#parong {
+	z-index: 20;
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	left: 0;
+	animation: tunneltravel 7s ease forwards;
 }
 
 
@@ -353,25 +382,6 @@ a.buttons {
 		opacity: 1;
 	}
 }
-
-#train {
-	z-index: 100;
-	position: fixed;
-	left: 100px;
-	height: 500px;
-	top: 155px;
-	animation: togpow 7s ease forwards;
-}
-
-#parong {
-	z-index: 99;
-	position: absolute;
-	bottom: 0px;
-	height: 100%;
-	left: 0;
-	animation: tunneltravel 7s ease forwards;
-}
-
 
 @keyframes tunneltravel {
 	0% {

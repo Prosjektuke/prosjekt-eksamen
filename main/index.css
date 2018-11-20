@@ -16,6 +16,11 @@ body {
     overflow: hidden;
 }
 
+#sky{
+  position: absolute;
+  margin: 0;
+}
+
 #overskrift{
   position: relative;
   top: 200px;
@@ -30,15 +35,12 @@ body {
   top: -300px;
 }
 
-.cloud{
-  z-index: 10;
-  position: absolute;
-  margin: 0;
+.clouds{
+  animation-name: moving-clouds;
 }
 
-
 #cloud1{
-  top: 0px;
+  top: 400px;
   height: 90px;
 }
 #cloud2{
@@ -64,8 +66,7 @@ body {
 #cloud7{
   height: 200px; 
   z-index: 11;
-  animation-name: moving-clouds;
-  animation-duration: 7s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-delay: 3s;
 }
@@ -77,7 +78,7 @@ body {
   }
 
   100%{
-    right: 300px;
+    left: 300px;
     top: 100px;
   }
 }
