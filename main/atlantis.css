@@ -1,8 +1,8 @@
 body {
 	background-color: skyblue;
 	background-image: url("images/bubbles.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: 1336px
 }
 
@@ -12,4 +12,238 @@ body {
 
 .window {
 	background-color: skyblue;
+}
+
+#start-page {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	height: 900px;
+	width: 1366px;
+}
+
+#first-page {
+	position: absolute;
+	top: 0;
+	left: 1366px;
+	height: 900px;
+	width: 1366px;
+}
+
+#second-page {
+	position: absolute;
+	top: 0;
+	left: 2732px;
+	height: 900px;
+	width: 1366px;
+}
+
+#bubblestream {
+	position: absolute;
+	height: 900px;
+	width: 1366px;
+	bottom: 0px;
+	opacity: 0;
+	animation: bubbles-start 3s;
+	animation-delay: 7s;
+	z-index: 200;
+}
+
+@keyframes bubbles-start {
+	0% {
+		bottom: -900px;
+		opacity: 1;
+	}
+
+	100% {
+		bottom: 900px;
+		opacity: 1;
+	}
+}
+
+#clownfish {
+	position: absolute;
+	top: 180px;
+	left: 1000px;
+	animation: clownfish-swim 10s ease-in-out infinite;
+	z-index: 91;
+}
+
+@keyframes clownfish-swim {
+	0% {
+		left: 1000px;
+	}
+
+	15% {
+		top: 150px;
+	}
+
+	30% {
+		top: 200px;
+	}
+
+	40% {
+		transform: rotateY(0deg);
+	}
+
+	50% {
+		left: 300px;
+		transform: rotateY(180deg);
+	}
+
+	70% {
+		top: 180px;
+	}
+
+	80% {
+		top: 200px;
+	}
+
+	90% {
+		left: 1000px;
+		transform: rotateY(180deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+
+#dory {
+	position: absolute;
+	top: 140px;
+	left: 1000px;
+	animation: dory-swim 10s ease-in-out infinite;
+	transform: rotatey(180deg);
+	z-index: 90;
+	animation-delay: 0.5s;
+}
+
+@keyframes dory-swim {
+	0% {
+		left: 1000px;
+	}
+
+	15% {
+		top: 140px;
+	}
+
+	30% {
+		top: 160px;
+	}
+
+	40% {
+		transform: rotateY(180deg);
+	}
+
+	50% {
+		left: 300px;
+		transform: rotateY(0deg);
+	}
+
+	70% {
+		top: 140px;
+	}
+
+	80% {
+		top: 160px;
+	}
+
+	90% {
+		left: 1000px;
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(1800deg);
+	}
+}
+
+
+#corol {
+	position: absolute;
+	top: 600px;
+	left: 900px;
+	animation: corol-swim 15s ease-in-out infinite;
+	animation-delay: 5s;
+}
+
+@keyframes corol-swim {
+	0% {
+		left: 900px;
+	}
+
+	15% {
+		top: 600px;
+	}
+
+	30% {
+		top: 500px;
+	}
+
+	40% {
+		transform: rotateY(0deg);
+	}
+
+	50% {
+		left: 200px;
+		transform: rotateY(180deg);
+	}
+
+	70% {
+		top: 600px;
+	}
+
+	80% {
+		top: 500px;
+	}
+
+	90% {
+		left: 900px;
+		transform: rotateY(180deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+#diver {
+	position: absolute;
+	left: 200px;
+	bottom: 200px;
+	animation: diver-swim 6s ease-in-out infinite;
+	z-index: 100;
+}
+
+@keyframes diver-swim {
+	0% {
+		bottom: 200px;
+	}
+
+	50% {
+		bottom: 150px;
+	}
+}
+
+#algae {
+	position: absolute;
+	right: -200px;
+	bottom: 0;
+	z-index: 1;
+}
+
+#castle {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 200;
+}
+
+#poseidon {
+	position: absolute;
+	bottom: 0;
+	right: 350px;
+	z-index: 210;
 }
