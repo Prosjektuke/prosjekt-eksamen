@@ -85,9 +85,6 @@ body{
     left: 100px;
 }
 
-.rockets{
-
-}
 
 #rocket1{
     position: absolute;
@@ -123,12 +120,22 @@ body{
     z-index: 20;
 }
 
+#mom{
+    height: 300px;
+    position: absolute;
+    left: 2000px;
+}
+
+#mom:hover + .hearts{
+    display: block;
+}
 
 
 .hearts{
     position: absolute;
     margin: 0;
     top: 1000px;
+    display: hidden;
 }
 
 #heart1{
