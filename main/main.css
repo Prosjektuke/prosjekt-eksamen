@@ -366,7 +366,7 @@ a.buttons {
 	color: white;
 	animation: train-stop 7s;
 	position: absolute;
-	top: 245px;
+	top: 220px;
 	left: 570px;
 	width: 120px;
 	text-align: center;
@@ -374,10 +374,10 @@ a.buttons {
 
 #train {
 	z-index: 50;
-	position: fixed;
+	position: fixed !important;
 	left: 100px;
-	top: 155px !important;
 	animation: togpow 7s ease forwards;
+	top: 155;
 }
 
 #parong {

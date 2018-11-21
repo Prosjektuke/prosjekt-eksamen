@@ -1,39 +1,49 @@
 body {
-	background-color: rgb(0,196,240);
+	background-size: 100% 100%;
+	background-image: url(images/atlantisbackground.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#start-page {
-	position: absolute;
-	top: 0;
-	left: 0px;
-	height: 900px;
-	width: 1366px;
-}
-
-h4{
+h4 {
 	font-family: "Courier"
 }
 
-#first-page {
+h5 {
+	display: block;
+	font-size: 20px;
+	font-family: arial;
+	color: black;
+	text-align: center;
+}
+
+.pages {
 	position: absolute;
 	top: 0;
-	left: 1366px;
-	height: 900px;
+	height: 100%;
 	width: 1366px;
+	background-image: url(images/sand.png);
+	background-repeat: repeat-x;
+	background-size: 400px;
+	background-position: bottom;
+}
+
+#start-page {
+	left: 0px;
+}
+
+#first-page {
+	left: 1366px;
 }
 
 #second-page {
-	position: absolute;
-	top: 0;
 	left: 2732px;
-	height: 900px;
-	width: 1366px;
 }
 
 #bubblestream {
 	position: absolute;
-	height: 900px;
-	width: 1366px;
+	height: 100%;
+	width: 100%;
 	bottom: 0px;
 	opacity: 0;
 	animation: bubbles-start 3s;
@@ -158,7 +168,6 @@ h4{
 	top: 600px;
 	left: 900px;
 	animation: corol-swim 15s ease-in-out infinite;
-	animation-delay: 6s;
 }
 
 @keyframes corol-swim {
@@ -206,7 +215,6 @@ h4{
 	top: 700px;
 	left: 1000px;
 	animation: shark-swim 7s ease-in-out infinite;
-	animation-delay: 3s;
 }
 
 @keyframes shark-swim {
@@ -269,9 +277,9 @@ h4{
 
 #algae {
 	position: absolute;
-	right: -200px;
+	left: -232px;
 	bottom: 0;
-	z-index: 1;
+	z-index: 101;
 }
 
 #castle {
@@ -286,4 +294,67 @@ h4{
 	bottom: 0px;
 	right: 350px;
 	z-index: 210;
+}
+
+#treasurechest{
+	position: absolute;
+	opacity: 0;
+	right: -210px;
+	bottom: 0;
+	z-index: 210;
+	animation: treasure-gold 1s ease forwards paused;
+}
+
+#poseidon:active #treasurechest {
+	animation-play-state: running;
+}
+
+@keyframes treasure-gold {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+#fishhook{
+	position: absolute;
+	left: 300px;
+	top: 0;
+	animation: fishhook-bob 5s ease-in-out infinite;
+}
+
+@keyframes fishhook-bob {
+	0%{
+		top: 0;
+	}
+	25%{
+		left: 300px;
+	}
+	50%{
+		top: -100px;
+	}
+	75%{
+		left: 350px;
+	}
+}
+
+#speechbubble{
+	position: absolute;
+	bottom: 190px;
+	right: -60px;
+	opacity: 0;
+}
+
+#speechtext{
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	left: 40px;
+	width: 140px;
+}
+
+#poseidon:hover #speechbubble {
+	opacity: 1;
 }
