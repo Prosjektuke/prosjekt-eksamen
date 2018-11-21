@@ -1,14 +1,171 @@
 body {
-	height: 900px;
-	width: 4098px;
-	margin: 0;
-    background-image: url(images/sky.jpg)
+    width: 4080px;
+    background-image: url(images/heaven_stairs.jpg);
+    background-repeat: none;
+    background-size: 100% 4098p;
 }
 
+.window {
+    background-color: white;
+}
 
-#angels {
-    width: 300px;
-    bottom: 700px;
-    left: -400px;
+.door {
+    background-color: white;
+}
+
+.pages{
+    overflow: hidden;
+}
+
+#start-page {
     position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 1366px;
+}
+
+.cloud {
+    position: absolute;
+}
+
+#cloud1 {
+    bottom: -50px;
+    left: 0;
+    animation: cloudMove 70s ease infinite;
+    z-index: 100;
+}
+
+#cloud2 {
+    top: 100px;
+    left: 920px;
+    z-index: 100;
+}
+
+#cloud3 {
+    top: 90px;
+    left: 940px;
+    z-index: 100;
+}
+
+@keyframes cloudMove {
+    0% {
+        bottom: 0px;
+        left: 0px;
+    }
+
+    25% {
+        bottom: 0px;
+        left: 20px;
+    }
+
+    50% {
+        bottom: 0px;
+        left: 50px;
+    }
+
+    100% {
+        bottom: 0px;
+        left: 3000px;
+    }
+}
+
+#first-page {
+    position: absolute;
+    top: 0;
+    left: 1366px;
+    height: 100%;
+    width: 1366px;
+}
+
+#second-page {
+    position: absolute;
+    top: 0;
+    left: 2732px;
+    height: 100%;
+    width: 1366px;
+}
+
+#wing1 {
+    bottom: 70px;
+    left: 150px;
+    position: absolute;
+}
+
+#wing2 {
+    bottom: 90px;
+    left: 790px;
+    position: absolute;
+}
+
+#morganfreeman {
+    position: absolute;
+    left: 520px;
+    bottom: 0;
+}
+
+#halo1 {
+    position: absolute;
+    left: 675px;
+    bottom: 310px;
+    animation: haloMove 10s ease infinite;
+}
+
+@keyframes haloMove {
+    25% {
+        bottom: 310px;
+    }
+
+    40% {
+        transform: rotatey(0deg);
+    }
+
+    50% {
+        transform: rotatey(180deg);
+    }
+
+    75% {
+        bottom: 350px;
+    }
+
+    90% {
+        transform: rotatey(180deg);
+    }
+
+    100% {
+        transform: rotatey(0deg);
+    }
+}
+
+#michaelJackson {
+    position: absolute;
+    top: 140px;
+    left: 300px;
+    z-index: 40;
+}
+
+#amy {
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    z-index: 100;
+}
+
+#rainbow {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+
+}
+
+#handTop {
+    position: absolute;
+    bottom: 440px;
+    left: 800px;
+}
+
+#handBottom {
+    position: absolute;
+    bottom: 0px;
+    left: 500px;
 }

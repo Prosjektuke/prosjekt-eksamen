@@ -21,12 +21,14 @@
 
 	<!--Div for toganimasjonen-->
 	<div id="tunnelview">
-		<img id="train" src="images/trainanimation.png">
+		<img id="train" class="traintop" src="images/trainanimation.png">
 		<!-- <img id="tunnel" src="image/tunnel1.jpg"> -->
 		<img id="parong" src="images/traintracks.png">
 		<img id="tunnelframe" src="images/tunnelframe.png">
 	</div> <!-- 7500 x 600-->
-	<div id="station-name">Atlantis</div>
+	<div id="station-name">
+		<h4>Atlantis</h4>
+	</div>
 
 	<!--Div innhold på websiden-->
 	<div id=info-box1 class=info-boxes>
@@ -59,7 +61,6 @@
 			<div id=text-prev>
 				<a class="buttons" href="heaven.html">FORRIGE</a>
 			</div>
-			<div id=train></div>
 			<div id=roof-prev class=roof></div>
 			<div id=floor-prev class=floor></div>
 			<div id=wheel1-prev class=wheel></div>
@@ -118,32 +119,41 @@
 			<div id=mom-button class=stop-button>
 				<a href=mom.html></a>
 				<div id=mom-text class=stop-text>
-					<a href=mom.html>Hos mamma</a>
+					<a href=mom.html>Mamma</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	
-	<div id="start-page">
-				<div id=bubblestream>
+
+
+	<div id="start-page" class="pages">
+		<div id=bubblestream>
 			<img id=bubblestream1 src="images/bubblestream.png" width="100%">
-	</div>
-		
-	<div id="first-page">
-		<img id="clownfish" src="images/clownfish.png" width="100px">
-		<img id="corol" src="images/corol.png" width="120px">
-		<img id="dory" src="images/dory.png" width="120px">
-		<img id="shark" src="images/shark.png" width="300px">
-		<img id="diver" src="images/diver.png" width="300px">
-		<img id="algae" src="images/algae.png" height="500px">
-	</div>
+		</div>
 
-	<div id="second-page">
-		<img id="castle" src="images/palace.png">
-		<div id=poseidon><img id=poseidon-picture src="images/poseidon.png" height=300px;></div>
-	</div>
+		<div id="first-page" class="pages">
+			<img id="clownfish" src="images/clownfish.png" width="100px">
+			<img id="corol" src="images/corol.png" width="120px">
+			<img id="dory" src="images/dory.png" width="120px">
+			<img id="shark" src="images/shark.png" width="300px">
+			<img id="diver" src="images/diver.png" width="300px">
+		</div>
 
+		<div id="second-page" class="pages">
+			<div id=poseidon><img id=poseidon-picture src="images/poseidon.png" height=300px;>
+				<div id=treasurechest><img id=treasure src="images/treasure.png" width="170px" class="poseidonplaystate"></div>
+				<div id=speechbubble><img src="images/speechbubble.png" width="200px" class="poseidonhover">
+					<div id=speechtext>
+						<h5>Trykk på spydet mitt!</h5>
+					</div>
+				</div>
+
+			</div>
+			<img id="algae" src="images/algae.png">
+			<img id="castle" src="images/palace.png">
+			<div id=fishhook><img src="images/fishhook.png" id="fishhooker">
+			</div>
+		</div>
 
 
 

@@ -1,3 +1,11 @@
+#weed {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 768px;
+	width: 4098px;
+}
+
 h1 {
 	display: block;
 	font-size: 50px;
@@ -87,7 +95,7 @@ a.buttons {
 	right: 20px;
 	position: relative;
 	width: 96%;
-	height: 150px;
+	height: 120px;
 	z-index: 100;
 }
 
@@ -366,7 +374,7 @@ a.buttons {
 	color: white;
 	animation: train-stop 7s;
 	position: absolute;
-	top: 245px;
+	top: 220px;
 	left: 570px;
 	width: 120px;
 	text-align: center;
@@ -374,10 +382,10 @@ a.buttons {
 
 #train {
 	z-index: 50;
-	position: fixed;
+	position: fixed !important;
 	left: 100px;
-	top: 155px !important;
 	animation: togpow 7s ease forwards;
+	top: 155;
 }
 
 #parong {
