@@ -87,12 +87,6 @@ margin: 0;
         left: -300px;
     }
 
-    50% {
-        opacity: 1;
-        left: -500px;
-        height: 700px;
-    }
-
     100% {
         left: -600px;
         top: 0px;
@@ -193,14 +187,14 @@ margin: 0;
     }
 }
 
-#hippo {
+/* #hippo {
     z-index: 400;
     position: absolute;
     height: 700px;
     left: 0;
     margin: 0;
-    bottom: -300px;
-}
+    bottom: -300px; 
+} */
 
 #eye {
     z-index: 401;
@@ -216,7 +210,7 @@ margin: 0;
 }
 
 .foliage {
-    z-index: 200;
+    z-index: 900;
     position: absolute;
     top: 400px;
     height: 70px;
@@ -226,181 +220,211 @@ margin: 0;
 #foliage1 {
     left: 1500px;
     animation: foils 1s ease forwards;
-    animation-delay: 7s;
+    animation-delay: 6s;
 }
 
 #foliage2 {
     left: 1550px;
     animation: foils 1s ease forwards;
-    animation-delay: 7.5s;
+    animation-delay: 7.2s;
 }
 
 #foliage3 {
     left: 1550px;
     animation: foils 1s ease forwards;
-    animation-delay: 8s;
+    animation-delay: 7.4s;
 }
 
 #foliage4 {
     left: 1600px;
     animation: foils 1s ease forwards;
-    animation-delay: 8.5s;
+    animation-delay: 7.6s;
 }
 
 #foliage5 {
     left: 1650px;
     animation: foils 1s ease forwards;
-    animation-delay: 9s;
+    animation-delay: 7.8s;
 }
 
 #foliage6 {
     left: 1700px;
     animation: foils 1s ease forwards;
-    animation-delay: 9.5s;
+    animation-delay: 8s;
 }
 
 #foliage7 {
     left: 1750px;
     animation: foils 1s ease forwards;
-    animation-delay: 10s;
+    animation-delay: 8.2s;
 }
 
 #foliage8 {
     left: 1800px;
     animation: foils 1s ease forwards;
-    animation-delay: 10.5s;
+    animation-delay: 8.4s;
 }
 
 #foliage9 {
     left: 1850px;
     animation: foils 1s ease forwards;
-    animation-delay: 11s;
+    animation-delay: 8.6s;
 }
 
 #foliage10 {
     left: 1900px;
     animation: foils 1s ease forwards;
-    animation-delay: 11.5s;
+    animation-delay: 8.8s;
 }
 
 #foliage11 {
     left: 1950px;
     animation: foils 1s ease forwards;
-    animation-delay: 12s;
+    animation-delay: 9s;
 }
 
 #foliage12 {
     left: 2000px;
     animation: foils 1s ease forwards;
-    animation-delay: 12.5s;
+    animation-delay: 9.2s;
 }
 
 #foliage13 {
     left: 2050px;
     animation: foils 1s ease forwards;
-    animation-delay: 13s;
+    animation-delay: 9.4s;
 }
 
 #foliage14 {
     left: 2100px;
     animation: foils 1s ease forwards;
-    animation-delay: 13.5s;
+    animation-delay: 9.6s;
 }
 
 #foliage15 {
     left: 2150px;
     animation: foils 1s ease forwards;
-    animation-delay: 14s;
+    animation-delay: 9.8s;
 }
 
 #foliage16 {
     left: 2200px;
     animation: foils 1s ease forwards;
-    animation-delay: 14.5s;
+    animation-delay: 10s;
 }
 
 #foliage17 {
     left: 2250px;
     animation: foils 1s ease forwards;
-    animation-delay: 15s;
+    animation-delay: 10.2s;
 }
 
 #foliage18 {
     left: 2300px;
     animation: foils 1s ease forwards;
-    animation-delay: 15.5s;
+    animation-delay: 10.4s;
 }
 
 #foliage19 {
     left: 2350px;
     animation: foils 1s ease forwards;
-    animation-delay: 16s;
+    animation-delay: 10.6s;
 }
 
 #foliage20 {
     left: 2400px;
     animation: foils 1s ease forwards;
-    animation-delay: 16.5s;
+    animation-delay: 10.8s;
 }
 
 #foliage21 {
     left: 2450px;
     animation: foils 1s ease forwards;
-    animation-delay: 17s;
+    animation-delay: 11s;
 }
 
 #foliage22 {
     left: 2500px;
     animation: foils 1s ease forwards;
-    animation-delay: 17.5s;
+    animation-delay: 11.2s;
 }
 
 #foliage23 {
     left: 2550px;
     animation: foils 1s ease forwards;
-    animation-delay: 18s;
+    animation-delay: 11.4s;
 }
 
 #foliage24 {
     left: 2600px;
     animation: foils 1s ease forwards;
-    animation-delay: 18.5s;
+    animation-delay: 11.6s;
 }
 
 #foliage25 {
     left: 2650px;
     animation: foils 1s ease forwards;
-    animation-delay: 19s;
+    animation-delay: 11.8s;
 }
 
 #foliage26 {
     left: 2700px;
     animation: foils 1s ease forwards;
-    animation-delay: 19.5s;
+    animation-delay: 12s;
 }
 
 #foliage27 {
     left: 2750px;
     animation: foils 1s ease forwards;
-    animation-delay: 20s;
+    animation-delay: 12.2s;
 }
 
 #foliage28 {
     left: 2800px;
     animation: foils 1s ease forwards;
-    animation-delay: 20.5s;
+    animation-delay: 12.4s;
 }
 
 #foliage29 {
     left: 2850px;
     animation: foils 1s ease forwards;
-    animation-delay: 21s;
+    animation-delay: 12.6s;
 }
 
 #foliage30 {
     left: 2900px;
     animation: foils 1s ease forwards;
-    animation-delay: 21.5s;
+    animation-delay: 12.8s;
+}
+#foliage31 {
+    left: 2950px;
+    animation: foils 1s ease forwards;
+    animation-delay: 13s;
+}
+#foliage32 {
+    left: 3000px;
+    animation: foils 1s ease forwards;
+    animation-delay: 13.2s;
+}
+#foliage33 {
+    left: 3050px;
+    animation: foils 1s ease forwards;
+    animation-delay: 13.4s;
+}
+#foliage34 {
+    left: 3100px;
+    animation: foils 1s ease forwards;
+    animation-delay: 13.6s;
+}
+#foliage35 {
+    left: 3150px;
+    animation: foils 1s ease forwards;
+    animation-delay: 13.8s;
+}
+#foliage36 {
+    left: 3200px;
+    animation: foils 1s ease forwards;
+    animation-delay: 14s;
 }
 
 @keyframes foils {
