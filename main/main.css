@@ -1,3 +1,11 @@
+#weed {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 768px;
+	width: 4098px;
+}
+
 h1 {
 	display: block;
 	font-size: 50px;
@@ -87,7 +95,7 @@ a.buttons {
 	right: 20px;
 	position: relative;
 	width: 96%;
-	height: 150px;
+	height: 120px;
 	z-index: 100;
 }
 
