@@ -2,14 +2,15 @@ body {
   margin: 0;
   background-color: rgb(100, 183, 255);
   width: 1336;
-  height: 768px;
+   
+  height: 1000px;
   position: relative;
   background-size: 100%;
   top: 0;
 }
 
 #container {
-    height:768px;
+    height:1100px;
     width: 1700px;
     background-color: rgb(191, 234, 255);
     position: absolute;
