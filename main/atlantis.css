@@ -212,7 +212,7 @@ h5 {
 
 #shark {
 	position: absolute;
-	top: 700px;
+	top: 600px;
 	left: 1000px;
 	animation: shark-swim 7s ease-in-out infinite;
 }
@@ -223,11 +223,11 @@ h5 {
 	}
 
 	15% {
-		top: 600px;
+		bottom: -100px;
 	}
 
 	30% {
-		top: 500px;
+		bottom: 0;
 	}
 
 	40% {
@@ -240,11 +240,11 @@ h5 {
 	}
 
 	70% {
-		top: 600px;
+		bottom: 0;
 	}
 
 	80% {
-		top: 700px;
+		bottom: -100px;
 	}
 
 	90% {
@@ -291,12 +291,12 @@ h5 {
 
 	30% {
 		height: 520px;
-		left: -222px;
+		left: -242px;
 	}
 
 	60% {
 		height: 520px;
-		left: -222px;
+		left: -242px;
 	}
 
 	100% {
