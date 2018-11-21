@@ -31,6 +31,7 @@
     </div>
 
     <!--Div innhold på websiden-->
+   <div id="sound"> <iframe src="sounds/birds.mp3" allow="autoplay"></iframe></div>
     <div id=info-box1 class=info-boxes>
      <h3>Du er i jungelen!</h3>
         <p>Ikke la deg lure av fristelsene!</p>
@@ -120,7 +121,10 @@
 
     <div id="events1" class="events">   
     <div id=jungle>
-            <img id="dino" src="images/dinos.png">
+        <div id=gap><iframe src="sounds/mindgap.mp3" allow="autoplay"></iframe></div>
+        <div id="dinoscream"> <iframe src="sounds/dinosound.mp3" allow="autoplay"></iframe></div> 
+        <img id="dino" src="images/dinos.png">  
+
             <img id="vine" src="images/vinee2.png">
             <img id="svine1" class="svine" src="images/vinee.png">
             <img id="svine2" class="svine" src="images/vinee.png">
@@ -171,8 +175,8 @@
     </div>
 
     <div id="events3" class="events">
-        <img id="beetle" src="images/beetle.png">
-        <img id="hippo" src="images/hippo2.png">
+        <div id="beetlecontainer"> <img id="beetle" src="images/beetle.png" height= 300px;> 
+        <img id="hippo" src="images/hippo2.png"> </div>
     </div>
 
 </body>

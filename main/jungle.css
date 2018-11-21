@@ -9,6 +9,17 @@ h4 {
     font-family: "Courier"
 }
 
+#sound {
+    opacity: 0;
+}
+
+#dinoscream {
+    opacity: 0;
+}
+
+#gap {
+    opacity: 0;
+}
 .events {
 	position: absolute;
 	top: 0;
@@ -199,11 +210,22 @@ h4 {
     }
 }
 
+#beetlecontainer {
+	position: absolute;
+	top: 200px;
+	left: 500px;
+	z-index: 210;
+}
+
 #beetle {
     z-index: 98;
     position: absolute;
-    top: 200px;
-    left: 500px;
+    top: 0;
+    left: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: repeat;
+    transition-delay: 0s;
 }
 
 #hippo {
@@ -211,21 +233,28 @@ h4 {
     position: absolute;
     height: 1000px;
     left: 1500px;
-    bottom: -100px;
-    animation: hippoattack 1s ease forwards paused;
+    top: -250px;
+    animation: hippoatt 0.3s ease forwards paused;
 }
 
-#beetle:active #hippo {
+#beetlecontainer {
+    height: 300px;
+    width: 300px;
+}
+#beetlecontainer:active #hippo {
 	animation-play-state: running;
 }
 
-@keyframes hippoattack {
+#beetlecontainer:hover #beetle {
+    top: 20px;
+}
+@keyframes hippoatt {
 	0% {
-		right: 1500px;
+	    left: 1500px;
 	}
 
 	100% {
-		right: 500px;
+		left: -250px;
 	}
 }
 
