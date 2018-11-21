@@ -2,7 +2,13 @@ body {
     width: 4080px;
     background-image: url(images/heaven_stairs.jpg);
     background-repeat: none;
-    background-size: 100% 4098p;
+    background-size: 100% 4;
+}
+
+#info-box2 {
+    left: 2400px;
+    top: 650px;
+    width: 500px;
 }
 
 .window {
@@ -13,7 +19,7 @@ body {
     background-color: white;
 }
 
-.pages{
+.pages {
     overflow: hidden;
 }
 
@@ -30,22 +36,11 @@ body {
 }
 
 #cloud1 {
-    bottom: -50px;
+    top: 700px;
     left: 0;
     animation: cloudMove 70s ease infinite;
     z-index: 100;
-}
-
-#cloud2 {
-    top: 100px;
-    left: 920px;
-    z-index: 100;
-}
-
-#cloud3 {
-    top: 90px;
-    left: 940px;
-    z-index: 100;
+    width: 400px;
 }
 
 @keyframes cloudMove {
@@ -87,33 +82,37 @@ body {
 }
 
 #wing1 {
-    bottom: 70px;
-    left: 150px;
+    top: 450px;
+    left: 190px;
     position: absolute;
+    width: 550px
 }
 
 #wing2 {
-    bottom: 90px;
-    left: 790px;
+    top: 450px;
+    left: 800px;
     position: absolute;
+    width: 450px;
 }
 
-#morganfreeman {
+#morganfreeman-picture {
     position: absolute;
-    left: 520px;
-    bottom: 0;
+    left: 540px;
+    top: 500px;
+    height: 400px;
 }
 
 #halo1 {
     position: absolute;
     left: 675px;
-    bottom: 310px;
+    top: 350px;
     animation: haloMove 10s ease infinite;
+    width: 200px;
 }
 
 @keyframes haloMove {
     25% {
-        bottom: 310px;
+        top: 370px;
     }
 
     40% {
@@ -125,7 +124,7 @@ body {
     }
 
     75% {
-        bottom: 350px;
+        top: 370px;
     }
 
     90% {
@@ -137,35 +136,51 @@ body {
     }
 }
 
-#michaelJackson {
+#michael {
     position: absolute;
     top: 140px;
     left: 300px;
     z-index: 40;
+    width: 150px;
 }
 
 #amy {
     position: absolute;
-    top: 30px;
-    left: 900px;
+    top: 100px;
+    left: 880px;
     z-index: 100;
+    width: 200px;
+    animation: amyMove 10s ease infinite;
 }
 
-#rainbow {
+@keyframes amyMove {
+    0%{
+        top: 100px;
+    }
+    50%{
+        top: 150px;
+    }
+}
+
+
+#rainbow-picture {
     position: absolute;
     top: 0px;
     left: 400px;
+    width: 900px;
 
 }
 
 #handTop {
     position: absolute;
-    bottom: 440px;
+    top: 0px;
     left: 800px;
+    width: 400px;
 }
 
 #handBottom {
     position: absolute;
-    bottom: 0px;
+    top: 480px;
     left: 500px;
+    width: 400px;
 }
