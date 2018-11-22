@@ -56,33 +56,6 @@ h4{
 	}
 }
 
-#spiderman {
-	top: -700px;
-	position: relative;
-	left: 150px;
-	animation-name: spiderman-drop;
-	animation-iteration-count: infinite;
-	animation-duration: 20s;
-	animation-delay: 3s;
-	height: 150px;
-	margin: 0;
-	z-index: 30;
-}
-
-@keyframes spiderman-drop {
-	0% {
-		top: -600px;
-	}
-
-	5% {
-		top: -200px;
-	}
-
-	100% {
-		top: -600px;
-	}
-}
-
 #colors {
 	position: absolute;
 	margin: 0;
