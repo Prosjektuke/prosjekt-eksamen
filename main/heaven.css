@@ -9,6 +9,9 @@ h4{
 	font-family: "Geneva";
 }
 
+#heavensound {
+    opacity: 0;
+}
 #logo{
 	z-index: 1000;
 }
