@@ -5,9 +5,8 @@ body{
 #container {
     height: 768px;
     width: 4068px;
-    background-color: rgb(256, 256, 256);
+    background-image: url(images/universe.png);
     position: relative;
-    
 
 }
 
@@ -47,6 +46,26 @@ body{
     height: 250px;
 
 }
+
+
+#sol {
+    
+    position: relative;
+    bottom: 0;
+    left: 2200px;
+    top: -235px;
+    height: 250px;
+    
+    
+    
+    
+}
+
+
+
+
+
+
 
 #astronaut {
     position: relative;
