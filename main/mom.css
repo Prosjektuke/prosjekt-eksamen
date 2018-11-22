@@ -8,6 +8,9 @@ h4{
 	font-family: "Plantagenet Cherokee"
 }
 
+#momsound {
+	opacity: 0;
+}
 /*Denne classen og de neste tre ID'ene er plassering av innholds div'ene*/
 .pages {
 	position: absolute;
