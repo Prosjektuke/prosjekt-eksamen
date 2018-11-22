@@ -8,6 +8,7 @@ h4{
 	font-family: "Plantagenet Cherokee"
 }
 
+/*Denne classen og de neste tre ID'ene er plassering av innholds div'ene*/
 .pages {
 	position: absolute;
 	top: 0;
@@ -28,6 +29,7 @@ h4{
 	left: 2732px;
 }
 
+/*Her begynner innhold side 1*/
 #dragon {
 	position: absolute;
 	top: 50px;
@@ -120,7 +122,9 @@ h4{
 	left: 700px;
 	z-index: 20;
 }
+/*Slutt side1*/
 
+/*Start side2*/
 #mom {
 	height: 300px;
 	position: absolute;
@@ -129,6 +133,7 @@ h4{
 	z-index: 1;
 }
 
+/*Vi elsker mamma, så vi har masse hjerter for å vise vår kjærlighet*/
 .hearts {
 	position: absolute;
 	margin: 0;
@@ -229,3 +234,4 @@ h4{
 	}
 
 }
+/*Slutt side2*/

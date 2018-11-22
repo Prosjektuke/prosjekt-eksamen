@@ -5,10 +5,12 @@ body {
 	background-attachment: fixed;
 }
 
+/*Hvert stopp har egen font for stoppets navn som er i en h4*/
 h4 {
 	font-family: "Courier"
 }
 
+/*Spilleren for bakgrunnslyden, gjemt*/
 #bubblesounds {
 	opacity: 0;
 }
@@ -26,6 +28,7 @@ h5 {
 	text-align: center;
 }
 
+/*Denne classen og de neste tre ID'ene er plassering av innholds div'ene*/
 .pages {
 	position: absolute;
 	top: 0;
@@ -72,6 +75,8 @@ h5 {
 	}
 }
 
+
+/*Fisker*/
 #clownfish {
 	position: absolute;
 	top: 180px;
@@ -265,6 +270,7 @@ h5 {
 		transform: rotateY(0deg);
 	}
 }
+/*Slutt fisker*/
 
 #diver {
 	position: absolute;
@@ -333,9 +339,15 @@ h5 {
 	right: -210px;
 	bottom: 0;
 	z-index: 210;
-	animation: treasure-gold 1s ease forwards paused;
+	animation: treasure-gold 0.1s ease forwards paused;
 }
 
+/*Animasjon for å få Poseidon til å snakke*/
+#poseidon:hover #speechbubble {
+	opacity: 1;
+}
+
+/*Animasjon for å få frem skattekista ved å trykke på Poseidon*/
 #poseidon:active #treasurechest {
 	animation-play-state: running;
 }
