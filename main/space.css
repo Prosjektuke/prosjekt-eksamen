@@ -56,15 +56,11 @@ body{
     top: -235px;
     height: 250px;
     
-    
-    
-    
 }
 
-
-
-
-
+.info-boxes {
+    
+}
 
 
 #astronaut {
@@ -76,13 +72,7 @@ body{
     animation: astronautMove 10s ease forwards;
 }
 
-#spaceship {
-    position: relative;
-    height: 150px;
-    top: -450px;
-    
-    
-}
+
 
 
 
