@@ -234,7 +234,7 @@ h4 {
     height: 1000px;
     left: 1500px;
     top: -250px;
-    animation: hippoatt 0.3s ease forwards paused;
+    animation: hippoatt 0.1s ease forwards paused;
 }
 
 #beetlecontainer {
