@@ -9,6 +9,17 @@ h4 {
     font-family: "Courier"
 }
 
+#sound {
+    opacity: 0;
+}
+
+#dinoscream {
+    opacity: 0;
+}
+
+#gap {
+    opacity: 0;
+}
 .events {
 	position: absolute;
 	top: 0;
@@ -199,11 +210,22 @@ h4 {
     }
 }
 
+#beetlecontainer {
+	position: absolute;
+	top: 200px;
+	left: 500px;
+	z-index: 210;
+}
+
 #beetle {
     z-index: 98;
     position: absolute;
-    top: 200px;
-    left: 500px;
+    top: 0;
+    left: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: repeat;
+    transition-delay: 0s;
 }
 
 #hippo {
@@ -211,26 +233,33 @@ h4 {
     position: absolute;
     height: 1000px;
     left: 1500px;
-    bottom: -100px;
-    animation: hippoattack 1s ease forwards paused;
+    top: -250px;
+    animation: hippoatt 0.1s ease forwards paused;
 }
 
-#beetle:active #hippo {
+#beetlecontainer {
+    height: 300px;
+    width: 300px;
+}
+#beetlecontainer:active #hippo {
 	animation-play-state: running;
 }
 
-@keyframes hippoattack {
+#beetlecontainer:hover #beetle {
+    top: 20px;
+}
+@keyframes hippoatt {
 	0% {
-		right: 1500px;
+	    left: 1500px;
 	}
 
 	100% {
-		right: 500px;
+		left: -250px;
 	}
 }
 
 .foliage {
-    z-index: 900;
+    z-index: 100;
     position: absolute;
     top: 400px;
     height: 70px;
@@ -239,211 +268,211 @@ h4 {
 
 #foliage1 {
     left: 1500px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 6s;
 }
 
 #foliage2 {
     left: 1550px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 7.2s;
 }
 
 #foliage3 {
     left: 1550px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 7.4s;
 }
 
 #foliage4 {
     left: 1600px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 7.6s;
 }
 
 #foliage5 {
     left: 1650px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 7.8s;
 }
 
 #foliage6 {
     left: 1700px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 8s;
 }
 
 #foliage7 {
     left: 1750px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 8.2s;
 }
 
 #foliage8 {
     left: 1800px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 8.4s;
 }
 
 #foliage9 {
     left: 1850px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 8.6s;
 }
 
 #foliage10 {
     left: 1900px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 8.8s;
 }
 
 #foliage11 {
     left: 1950px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 9s;
 }
 
 #foliage12 {
     left: 2000px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 9.2s;
 }
 
 #foliage13 {
     left: 2050px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 9.4s;
 }
 
 #foliage14 {
     left: 2100px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 9.6s;
 }
 
 #foliage15 {
     left: 2150px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 9.8s;
 }
 
 #foliage16 {
     left: 2200px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 10s;
 }
 
 #foliage17 {
     left: 2250px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 10.2s;
 }
 
 #foliage18 {
     left: 2300px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 10.4s;
 }
 
 #foliage19 {
     left: 2350px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 10.6s;
 }
 
 #foliage20 {
     left: 2400px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 10.8s;
 }
 
 #foliage21 {
     left: 2450px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 11s;
 }
 
 #foliage22 {
     left: 2500px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 11.2s;
 }
 
 #foliage23 {
     left: 2550px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 11.4s;
 }
 
 #foliage24 {
     left: 2600px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 11.6s;
 }
 
 #foliage25 {
     left: 2650px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 11.8s;
 }
 
 #foliage26 {
     left: 2700px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 12s;
 }
 
 #foliage27 {
     left: 2750px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 12.2s;
 }
 
 #foliage28 {
     left: 2800px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 12.4s;
 }
 
 #foliage29 {
     left: 2850px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 12.6s;
 }
 
 #foliage30 {
     left: 2900px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 12.8s;
 }
 #foliage31 {
     left: 2950px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 13s;
 }
 #foliage32 {
     left: 3000px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 13.2s;
 }
 #foliage33 {
     left: 3050px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 13.4s;
 }
 #foliage34 {
     left: 3100px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 13.6s;
 }
 #foliage35 {
     left: 3150px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 13.8s;
 }
 #foliage36 {
     left: 3200px;
-    animation: foils 1s ease forwards;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 14s;
 }
 
@@ -454,5 +483,17 @@ h4 {
 
     100% {
         opacity: 1;
+    }
+}
+@keyframes foilsmovement {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(5deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
     }
 }
