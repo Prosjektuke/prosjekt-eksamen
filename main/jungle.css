@@ -9,10 +9,6 @@ h4 {
     font-family: "Herculanum"
 }
 
-#logo{
-	z-index: 1000;
-}
-
 #sound {
     opacity: 0;
 }

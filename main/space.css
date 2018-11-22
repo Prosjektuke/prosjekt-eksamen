@@ -27,10 +27,6 @@ h4 {
 	background-color: rgb(200, 200, 200, 0.3) !important;
 }
 
-#logo {
-	z-index: 1000;
-}
-
 #jupiter {
 	position: absolute;
 	bottom: 0;
