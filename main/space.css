@@ -5,9 +5,8 @@ body{
 #container {
     height: 768px;
     width: 4068px;
-    background-color: rgb(256, 256, 256);
+    background-image: url(images/universe.png);
     position: relative;
-    
 
 }
 
@@ -48,6 +47,22 @@ body{
 
 }
 
+
+#sol {
+    
+    position: relative;
+    bottom: 0;
+    left: 2200px;
+    top: -235px;
+    height: 250px;
+    
+}
+
+.info-boxes {
+    
+}
+
+
 #astronaut {
     position: relative;
     bottom: 0;
@@ -57,13 +72,7 @@ body{
     animation: astronautMove 10s ease forwards;
 }
 
-#spaceship {
-    position: relative;
-    height: 150px;
-    top: -450px;
-    
-    
-}
+
 
 
 
