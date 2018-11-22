@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	margin: 0;
 	height: 100%;
@@ -100,3 +101,107 @@ h4 {
 		left: 2000px;
 	}
 }
+=======
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(images/universe.png);
+	position: relative;
+}
+
+h1 {
+	color: white;
+}
+
+h3 {
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+h4 {
+	font-family: "Futura";
+	font-size: 14px;
+}
+
+#houstonsound {
+	opacity: 0;
+}
+#bottom-line {
+	background-color: rgb(200, 200, 200, 0.3) !important;
+}
+
+#logo {
+	z-index: 1000;
+}
+
+/* Id'er for planeter */
+#jupiter {
+	position: absolute;
+	bottom: 0;
+	left: 1500px;
+	height: 400px;
+	top: 15px;
+
+}
+
+#earth {
+	position: absolute;
+	left: 2100px;
+	top: 8px;
+	height: 300px;
+
+}
+
+#mars {
+	position: absolute;
+	bottom: 0;
+	left: 2700px;
+	top: 150px;
+	height: 240px;
+
+}
+
+#saturn {
+	position: absolute;
+	top: 0px;
+	left: 3300px;
+
+}
+
+/* Id for astronaut */
+#astronaut {
+	position: absolute;
+	bottom: 0;
+	left: 1366px;
+	top: 200px;
+	height: 100px;
+	animation: astronautMove 10s ease forwards infinite;
+	animation-delay: 3s;
+}
+
+
+/* animasjonen til astronauten */
+@keyframes astronautMove {
+	0% {
+		left: 1366px;
+		top: 200px;
+		transform: rotate(0deg);
+	}
+
+
+	25% {
+		top: 200px;
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(90deg);
+		top: 100px;
+		left: 2000px;
+	}
+}
+>>>>>>> 74bab6befc638042a7b7cad16b169896225a19f4

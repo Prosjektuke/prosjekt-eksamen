@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     width: 4080px;
     background-image: url(images/heaven_stairs.jpg);
@@ -189,3 +190,209 @@ h4{
     left: 500px;
     width: 400px;
 }
+=======
+/*Ansvarsområde til Sofie Jønsson*/
+body {
+    width: 4080px;
+    background-image: url(images/heaven_stairs.jpg);
+    background-repeat: none;
+    background-size: 100% 4;
+}
+
+/*Font til teksten*/
+h4 {
+    font-family: "Geneva";
+}
+
+/*Skjuler lydavspillere*/
+#heavensound {
+    opacity: 0;
+}
+
+/*Logo øverst på websiden*/
+#logo {
+    z-index: 1000;
+}
+
+/*Tekstboks på websiden*/
+#info-box2 {
+    left: 2400px;
+    top: 650px;
+    width: 500px;
+}
+
+/*Tekstboks på websiden*/
+#info-box3 {
+    left: 3000px;
+    top: 450px;
+    width: 500px;
+}
+
+.window {
+    background-color: white;
+}
+
+.door {
+    background-color: white;
+}
+
+.pages {
+    overflow: hidden;
+}
+
+#start-page {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 1366px;
+}
+
+#cloud-picture {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    animation: cloudMove 50s ease infinite;
+    z-index: 100;
+    width: 400px;
+}
+
+/*Animasjon for sky som beveger seg over hele siden*/
+@keyframes cloudMove {
+    0% {
+        bottom: 0px;
+        left: 0px;
+    }
+
+    100% {
+        bottom: 0px;
+        left: 3000px;
+    }
+}
+
+#first-page {
+    position: absolute;
+    top: 0;
+    left: 1366px;
+    height: 100%;
+    width: 1366px;
+}
+
+#second-page {
+    position: absolute;
+    top: 0;
+    left: 2732px;
+    height: 100%;
+    width: 1366px;
+}
+
+#wing1 {
+    bottom: 100px;
+    left: 190px;
+    position: absolute;
+    width: 500px
+}
+
+#wing2 {
+    bottom: 100px;
+    left: 800px;
+    position: absolute;
+    width: 450px;
+}
+
+/*Morgan Freeman*/
+#morganfreeman-picture {
+    position: absolute;
+    left: 540px;
+    bottom: 0;
+    height: 400px;
+}
+
+#halo1 {
+    position: absolute;
+    left: 675px;
+    bottom: 350px;
+    animation: haloMove 10s ease infinite;
+    width: 200px;
+}
+
+/*Animasjon for glorien over Morgan Freeman*/
+@keyframes haloMove {
+    25% {
+        bottom: 370px;
+    }
+
+    40% {
+        transform: rotatey(0deg);
+    }
+
+    50% {
+        transform: rotatey(180deg);
+    }
+
+    75% {
+        bottom: 370px;
+    }
+
+    90% {
+        transform: rotatey(180deg);
+    }
+
+    100% {
+        transform: rotatey(0deg);
+    }
+}
+
+/*Michael Jackson*/
+#michael {
+    position: absolute;
+    top: 140px;
+    left: 300px;
+    z-index: 40;
+    width: 150px;
+}
+
+/*Amy Winehouse*/
+#amy {
+    position: absolute;
+    top: 100px;
+    left: 880px;
+    z-index: 100;
+    width: 200px;
+    animation: amyMove 10s ease infinite;
+}
+
+/*Animasjon for Amy Winehouse som ligge på en sky*/
+@keyframes amyMove {
+    0% {
+        top: 100px;
+    }
+
+    50% {
+        top: 150px;
+    }
+}
+
+
+#rainbow-picture {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    width: 900px;
+
+}
+
+#handTop {
+    position: absolute;
+    top: 0px;
+    left: 800px;
+    width: 400px;
+}
+
+#handBottom {
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+    width: 400px;
+}
+>>>>>>> 74bab6befc638042a7b7cad16b169896225a19f4

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 background-size: 100% 4;
 background-image: url(images/bggrad.jpg);
@@ -508,3 +509,515 @@ h4 {
         transform: rotateZ(0deg);
     }
 }
+=======
+body {
+background-size: 100% 4;
+background-image: url(images/bggrad.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+h4 {
+    font-family: "Herculanum"
+}
+
+#logo{
+	z-index: 1000;
+}
+
+/* skjuler lydavspillerne*/
+#sound {
+    opacity: 0;
+}
+
+#dinoscream {
+    opacity: 0;
+}
+
+#gap {
+    opacity: 0;
+}
+
+/* definerer størrelse på eventcontainere */
+.events {
+	position: absolute;
+	top: 0;
+	height: 100%;
+    width: 1366px;
+}
+
+#events1 {
+	left: 0px;
+}
+
+#events2 {
+    left: 1366px; 
+    overflow: hidden;
+}
+
+#events3 {
+    left: 2732px;   
+    overflow: hidden;
+}
+
+
+.svine {
+    position: absolute;
+    z-index: 555;
+    margin: 0;
+    height: 100px;
+    top: 380px;
+}
+
+#svine1 {
+    left: -100px;
+    opacity: 0;
+    animation: svineani 3s ease forwards;
+    animation-delay: 3s;
+}
+#svine2 {
+    left: 200px;
+    opacity: 0;
+    animation: svineani 3s ease forwards;
+    animation-delay: 3.2s;
+
+}
+#svine3 {
+    left: 500px;
+    opacity: 0;
+    animation: svineani 3s ease forwards;
+    animation-delay: 3.4s;
+}
+#svine4 {
+    left: 800px;
+    opacity: 0;
+    animation: svineani 3s ease forwards;
+    animation-delay: 4s;
+}
+#svine5 {
+    left: 1000px;
+    opacity: 0;
+    animation: svineani 3s ease forwards;
+    animation-delay: 4.7s;
+}
+
+/* animasjon for små lianer i starten */
+@keyframes svineani {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#vine {
+    z-index: 2;
+    position: absolute;
+    left: -300px;
+    height: 600px;
+    top: 50px;
+    animation: vineani 3s ease forwards;
+    animation-delay: 5s;
+    opacity: 0;
+}
+
+/*animasjon for stor bakgrunnsliane/grønn vekst*/
+@keyframes vineani {
+    0% {
+        opacity: 0;
+        left: -300px;
+    }
+
+    100% {
+        left: -600px;
+        top: 0px;
+        height: 800px;
+        opacity: 1;
+    }
+}
+
+#dino {
+    position: absolute;
+    height: 300px;
+    left: 100px;
+    top: 50px;
+    animation: dinoflight 10s ease-in-out infinite;
+}
+
+@keyframes dinoflight {
+    0% {
+        left: 100px;
+    }
+
+    25% {
+        left: 2000px;
+        top: 500px;
+    }
+
+    40% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        left: 3000px;
+        top: 100px;
+        transform: rotateY(180deg);
+    }
+
+    97% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+
+}
+
+#monkeys {
+    z-index: 500;
+    position: absolute;
+    left: 300px;
+    height: 400px;
+    top: -700px;
+    animation: monkeyani 9s ease-in-out infinite;
+    animation-delay: 7s;
+}
+
+/*litt rotasjon i apeanimasjon, aper er ville */
+@keyframes monkeyani {
+    0% {
+        top: -700px;
+        transform: rotate(30deg);
+    }
+    50% {
+        top: -130px;
+    }
+    100% {
+        top: -900px;
+
+    }
+}
+#palm {
+    z-index: 3;
+    position: absolute;
+    left: 500px;
+    top: 900px;
+    animation: palmani1 3s ease forwards, palmani2 5s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+/*to separate palmeanimasjoner, popper opp + en rotation for å holde bevegelse i den*/
+@keyframes palmani1 {
+    0% {
+        top: 900px;
+    }
+    100% {
+        top: 500px;
+    }
+}
+@keyframes palmani2 {
+    0% { 
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*gullbassecontainer for å få til hippoattack-animasjon */
+#beetlecontainer {
+	position: absolute;
+	top: 200px;
+	left: 500px;
+	z-index: 210;
+}
+#beetle {
+    z-index: 98;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: repeat;
+    transition-delay: 0s;
+}
+
+#hippo {
+    z-index: 99;
+    position: absolute;
+    height: 1000px;
+    left: 1500px;
+    top: -250px;
+    animation: hippoatt 0.1s ease forwards paused;
+}
+
+#beetlecontainer {
+    height: 300px;
+    width: 300px;
+}
+#beetlecontainer:active #hippo {
+	animation-play-state: running;
+}
+
+#beetlecontainer:hover #beetle {
+    top: 20px;
+}
+@keyframes hippoatt {
+	0% {
+	    left: 1500px;
+	}
+
+	100% {
+		left: -250px;
+	}
+}
+
+/*samme grunnlag for dette som palmene*/
+.foliage {
+    z-index: 100;
+    position: absolute;
+    top: 400px;
+    height: 70px;
+    opacity: 0;
+}
+
+#foliage1 {
+    left: 1500px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 6s;
+}
+
+#foliage2 {
+    left: 1550px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 7.2s;
+}
+
+#foliage3 {
+    left: 1550px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 7.4s;
+}
+
+#foliage4 {
+    left: 1600px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 7.6s;
+}
+
+#foliage5 {
+    left: 1650px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 7.8s;
+}
+
+#foliage6 {
+    left: 1700px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 8s;
+}
+
+#foliage7 {
+    left: 1750px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 8.2s;
+}
+
+#foliage8 {
+    left: 1800px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 8.4s;
+}
+
+#foliage9 {
+    left: 1850px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 8.6s;
+}
+
+#foliage10 {
+    left: 1900px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 8.8s;
+}
+
+#foliage11 {
+    left: 1950px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 9s;
+}
+
+#foliage12 {
+    left: 2000px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 9.2s;
+}
+
+#foliage13 {
+    left: 2050px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 9.4s;
+}
+
+#foliage14 {
+    left: 2100px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 9.6s;
+}
+
+#foliage15 {
+    left: 2150px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 9.8s;
+}
+
+#foliage16 {
+    left: 2200px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 10s;
+}
+
+#foliage17 {
+    left: 2250px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 10.2s;
+}
+
+#foliage18 {
+    left: 2300px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 10.4s;
+}
+
+#foliage19 {
+    left: 2350px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 10.6s;
+}
+
+#foliage20 {
+    left: 2400px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 10.8s;
+}
+
+#foliage21 {
+    left: 2450px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 11s;
+}
+
+#foliage22 {
+    left: 2500px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 11.2s;
+}
+
+#foliage23 {
+    left: 2550px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 11.4s;
+}
+
+#foliage24 {
+    left: 2600px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 11.6s;
+}
+
+#foliage25 {
+    left: 2650px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 11.8s;
+}
+
+#foliage26 {
+    left: 2700px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 12s;
+}
+
+#foliage27 {
+    left: 2750px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 12.2s;
+}
+
+#foliage28 {
+    left: 2800px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 12.4s;
+}
+
+#foliage29 {
+    left: 2850px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 12.6s;
+}
+
+#foliage30 {
+    left: 2900px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 12.8s;
+}
+#foliage31 {
+    left: 2950px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 13s;
+}
+#foliage32 {
+    left: 3000px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 13.2s;
+}
+#foliage33 {
+    left: 3050px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 13.4s;
+}
+#foliage34 {
+    left: 3100px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 13.6s;
+}
+#foliage35 {
+    left: 3150px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 13.8s;
+}
+#foliage36 {
+    left: 3200px;
+    animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
+    animation-delay: 14s;
+}
+@keyframes foils {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes foilsmovement {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(5deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+>>>>>>> 74bab6befc638042a7b7cad16b169896225a19f4
