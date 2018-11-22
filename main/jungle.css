@@ -13,6 +13,7 @@ h4 {
 	z-index: 1000;
 }
 
+/* skjuler lydavspillerne*/
 #sound {
     opacity: 0;
 }
@@ -24,6 +25,8 @@ h4 {
 #gap {
     opacity: 0;
 }
+
+/* definerer størrelse på eventcontainere */
 .events {
 	position: absolute;
 	top: 0;
@@ -44,6 +47,7 @@ h4 {
     left: 2732px;   
     overflow: hidden;
 }
+
 
 .svine {
     position: absolute;
@@ -85,6 +89,7 @@ h4 {
     animation-delay: 4.7s;
 }
 
+/* animasjon for små lianer i starten */
 @keyframes svineani {
     0% {
         opacity: 0;
@@ -109,6 +114,7 @@ h4 {
     opacity: 0;
 }
 
+/*animasjon for stor bakgrunnsliane/grønn vekst*/
 @keyframes vineani {
     0% {
         opacity: 0;
@@ -171,6 +177,7 @@ h4 {
     animation-delay: 7s;
 }
 
+/*litt rotasjon i apeanimasjon, aper er ville */
 @keyframes monkeyani {
     0% {
         top: -700px;
@@ -193,6 +200,7 @@ h4 {
     animation-delay: 5s;
 }
 
+/*to separate palmeanimasjoner, popper opp + en rotation for å holde bevegelse i den*/
 @keyframes palmani1 {
     0% {
         top: 900px;
@@ -201,7 +209,6 @@ h4 {
         top: 500px;
     }
 }
-
 @keyframes palmani2 {
     0% { 
         transform: rotate(0deg);
@@ -214,13 +221,13 @@ h4 {
     }
 }
 
+/*gullbassecontainer for å få til hippoattack-animasjon */
 #beetlecontainer {
 	position: absolute;
 	top: 200px;
 	left: 500px;
 	z-index: 210;
 }
-
 #beetle {
     z-index: 98;
     position: absolute;
@@ -262,6 +269,7 @@ h4 {
 	}
 }
 
+/*samme grunnlag for dette som palmene*/
 .foliage {
     z-index: 100;
     position: absolute;
@@ -479,7 +487,6 @@ h4 {
     animation: foils 1s ease forwards, foilsmovement 1s ease-in-out infinite;
     animation-delay: 14s;
 }
-
 @keyframes foils {
     0% {
         opacity: 0;
