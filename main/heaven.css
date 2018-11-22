@@ -5,9 +5,23 @@ body {
     background-size: 100% 4;
 }
 
+h4{
+	font-family: "Geneva";
+}
+
+#logo{
+	z-index: 1000;
+}
+
 #info-box2 {
     left: 2400px;
     top: 650px;
+    width: 500px;
+}
+
+#info-box3 {
+    left: 3000px;
+    top: 450px;
     width: 500px;
 }
 
@@ -31,14 +45,11 @@ body {
     width: 1366px;
 }
 
-.cloud {
+#cloud-picture {
     position: absolute;
-}
-
-#cloud1 {
     top: 700px;
     left: 0;
-    animation: cloudMove 70s ease infinite;
+    animation: cloudMove 50s ease infinite;
     z-index: 100;
     width: 400px;
 }
@@ -47,16 +58,6 @@ body {
     0% {
         bottom: 0px;
         left: 0px;
-    }
-
-    25% {
-        bottom: 0px;
-        left: 20px;
-    }
-
-    50% {
-        bottom: 0px;
-        left: 50px;
     }
 
     100% {
@@ -82,14 +83,14 @@ body {
 }
 
 #wing1 {
-    top: 450px;
+    bottom: 100px;
     left: 190px;
     position: absolute;
-    width: 550px
+    width: 500px
 }
 
 #wing2 {
-    top: 450px;
+    bottom: 100px;
     left: 800px;
     position: absolute;
     width: 450px;
@@ -98,21 +99,21 @@ body {
 #morganfreeman-picture {
     position: absolute;
     left: 540px;
-    top: 500px;
+	bottom: 0;
     height: 400px;
 }
 
 #halo1 {
     position: absolute;
     left: 675px;
-    top: 350px;
+    bottom: 350px;
     animation: haloMove 10s ease infinite;
     width: 200px;
 }
 
 @keyframes haloMove {
     25% {
-        top: 370px;
+        bottom: 370px;
     }
 
     40% {
@@ -124,7 +125,7 @@ body {
     }
 
     75% {
-        top: 370px;
+        bottom: 370px;
     }
 
     90% {
@@ -154,10 +155,11 @@ body {
 }
 
 @keyframes amyMove {
-    0%{
+    0% {
         top: 100px;
     }
-    50%{
+
+    50% {
         top: 150px;
     }
 }
@@ -180,7 +182,7 @@ body {
 
 #handBottom {
     position: absolute;
-    top: 480px;
+	bottom: 0;
     left: 500px;
     width: 400px;
 }

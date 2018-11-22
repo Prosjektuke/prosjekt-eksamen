@@ -9,6 +9,11 @@ h4 {
 	font-family: "Courier"
 }
 
+#logo{
+	z-index: 1000;
+}
+
+
 h5 {
 	display: block;
 	font-size: 20px;
@@ -280,7 +285,7 @@ h5 {
 	left: -232px;
 	bottom: 0;
 	z-index: 101;
-	animation: algae-move 15s ease-in-out infinite;
+	animation: algae-move 10s ease-in-out infinite;
 	height: 500px;
 }
 

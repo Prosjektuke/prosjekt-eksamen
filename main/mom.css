@@ -123,8 +123,10 @@ body{
 #mom{
     height: 300px;
     position: absolute;
-    left: 2000px;
+    left: 1700px;
 }
+
+
 
 #mom:hover + .hearts{
     display: block;
@@ -141,12 +143,14 @@ body{
 #heart1{
     height: 100px;
     position: absolute;
-    left: 1400px;
-    animation-name: heartsfly;
-    animation-iteration-count: infinite;
-    animation-duration: 60s;
-    animation-delay: 5s;
-    margin: 0;
+    left: 1700px;
+    display: hidden;
+}
+
+#mom:hover  #heart1{
+    display: block;
+    transition-duration: 5s;
+    height: 200px;
 }
 
 #heart2{
@@ -158,6 +162,7 @@ body{
     animation-duration: 58s;
     animation-delay: 10s;
     margin: 0;
+    z-index: 0;
 }
 
 #heart3{
@@ -169,6 +174,7 @@ body{
     animation-duration: 45s;
     animation-delay: 15s;
     margin: 0;
+    z-index: 50;
 }
 
 #heart4{
@@ -180,6 +186,7 @@ body{
     animation-duration: 47s;
     animation-delay: 20s;
     margin: 0;
+    z-index: 100;
 }
 
 #heart5{
@@ -192,6 +199,7 @@ body{
     animation-duration: 40s;
     animation-delay: 25s;
     margin: 0;
+    z-index: 0;
 }
 
 #heart6{
@@ -204,6 +212,7 @@ body{
     animation-duration: 45s;
     animation-delay: 30s;
     margin: 0;
+    z-index: 100;
 }
 
 #heart7{
@@ -216,6 +225,7 @@ body{
     animation-duration: 50s;
     animation-delay: 35s;
     margin: 0;
+    z-index: 0;
 }
 
 #heart8{
@@ -228,6 +238,7 @@ body{
     animation-duration: 38s;
     animation-delay: 22s;
     margin: 0;
+    z-index: 100;
 }
 
 
@@ -241,6 +252,7 @@ body{
     animation-duration: 39s;
     animation-delay: 42s;
     margin: 0;
+    z-index: 100;
 }
 
 #heart10{
@@ -253,6 +265,7 @@ body{
     animation-duration: 39s;
     animation-delay: 12s;
     margin: 0;
+    z-index: 0;
 }
 
 

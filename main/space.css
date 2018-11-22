@@ -1,71 +1,84 @@
 body{
     margin: 0;
+	height: 100%;
+    width: 100%;
+    background-image: url(images/universe.png);
+    position: relative;
 }
 
-#container {
-    height: 768px;
-    width: 4068px;
-    background-color: rgb(256, 256, 256);
-    position: relative;
-    
+h1{
+	color: white;
+}
 
+h3{
+	color: white;
+}
+
+p{
+	color: white;
+}
+
+h4 {
+	font-family: "Futura";
+	font-size: 14px;
+}
+
+#bottom-line {
+	background-color: rgb(200, 200, 200, 0.3) !important;
+}
+
+#logo{
+	z-index: 1000;
 }
 
 #jupiter {
-    position: relative;
+    position: absolute;
     bottom: 0;
-    left: 1500px;
-    top: -100px;
+    left: 1400px;
+	height: 400px;
+    top: 0;
 
 }
 
-#jorda {
-    position: relative;
-    bottom: 0;
-    left: 1600px;
-    top: -235px;
+#earth {
+    position: absolute;
+    left: 2100px;
+    top: 40px;
     height: 300px;
 
 }
 
 #mars {
-
-    position: relative;
+    position: absolute;
     bottom: 0;
-    left: 1900px;
-    top: -250px;
+    left: 2700px;
+    top: 240px;
     height: 240px;
 
 }
 
 #saturn {
-
-    position: relative;
+    position: absolute;
     bottom: 0;
-    left: 2200px;
-    top: -235px;
+    left: 3300px;
+    top: 400px;
     height: 250px;
 
 }
 
+.info-boxes {
+    
+}
+
+
 #astronaut {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 1750px;
-    top: -550px;
+    top: 550px;
     height: 100px;
     animation: astronautMove 10s ease forwards;
 }
-
-#spaceship {
-    position: relative;
-    height: 150px;
-    top: -450px;
-    
-    
-}
-
-
 
 @keyframes astronautMove {
     0% {
