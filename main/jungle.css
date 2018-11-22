@@ -1,12 +1,16 @@
 body {
-background-size: 100%;
+background-size: 100% 4;
 background-image: url(images/bggrad.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
 
 h4 {
-    font-family: "Courier"
+    font-family: "Herculanum"
+}
+
+#logo{
+	z-index: 1000;
 }
 
 #sound {
