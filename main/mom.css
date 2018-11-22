@@ -1,231 +1,281 @@
-body {
-	background-color: rgb(255, 184, 191);
-	height: 100%;
-	width: 100%;
+body{
+ background-color: rgb(255, 203, 147);
+}
+    #container{
+    background-color: rgb(255, 203, 147);
+    height: 768px;
+    margin: -10px;
+    width: 4200px;
+    overflow: hidden;
 }
 
-h4{
-	font-family: "Plantagenet Cherokee"
+.window, .door{
+    background-color: rgb(255, 203, 147);
 }
 
-.pages {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 1366px;
-	overflow: hidden;
+.stop-button{
+    background-color: rgb(243, 0, 0);
 }
 
-#start-page {
-	left: 0px;
+#story1{
+    position: relative;
+    left: 1600px;
 }
 
-#first-page {
-	left: 1366px;
+#dragon{
+    position: relative;
+    margin: 0;
+    top: 50px;
+    height: 240px;
+    left: 0px;
+    z-index: 30;
+    animation-name: dragonfly;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    z-index: 12;
 }
 
-#second-page {
-	left: 2732px;
+@keyframes dragonfly{
+    0%{
+        left: 0px;
+        top: 50px;
+    }
+
+    50%{
+        left: 5px;
+        top: 30px;
+    }
+
+    100%{
+        left: 0px;
+        top: 50px;
+    }
 }
 
-#dragon {
-	position: absolute;
-	top: 50px;
-	height: 240px;
-	left: 300px;
-	z-index: 30;
-	animation-name: dragonfly;
-	animation-iteration-count: infinite;
-	animation-duration: 6s;
+#spiderman{
+    top: -700px;
+    position: relative;
+    left: 150px;
+    animation-name: spiderman-drop;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    height: 150px;
+    margin: 0;
+    z-index: 30;
 }
 
-@keyframes dragonfly {
-	0% {
-		left: 300px;
-		top: 50px;
-	}
-
-	50% {
-		left: 305px;
-		top: 30px;
-	}
+@keyframes spiderman-drop{
+    0%{
+        top: -600px;
+    }
+    5%{
+        top: -200px;
+    }
+    100%{
+        top: -600px;
+    }
 }
 
-#spiderman {
-	top: -700px;
-	position: relative;
-	left: 150px;
-	animation-name: spiderman-drop;
-	animation-iteration-count: infinite;
-	animation-duration: 20s;
-	animation-delay: 3s;
-	height: 150px;
-	margin: 0;
-	z-index: 30;
-}
-
-@keyframes spiderman-drop {
-	0% {
-		top: -600px;
-	}
-
-	5% {
-		top: -200px;
-	}
-
-	100% {
-		top: -600px;
-	}
-}
-
-#colors {
-	position: absolute;
-	margin: 0;
-	height: 300px;
-	z-index: 10;
-	left: 450px;
-}
-
-
-#rocket1 {
-	position: absolute;
-	margin: 0;
-	top: 1000px;
-	z-index: 10;
-	height: 1300px;
-	left: 1000px;
-	animation-name: rocketlaunch;
-	animation-iteration-count: infinite;
-	animation-duration: 20s;
-	z-index: 70;
-	animation-delay: 10s;
-}
-
-@keyframes rocketlaunch {
-	0% {
-		top: 1000px;
-		left: 800px;
-	}
-
-	100% {
-		top: -2000px;
-		left: 200px;
-	}
-}
-
-#castle {
-	margin: 0;
-	position: absolute;
-	top: 0;
-	left: 700px;
-	z-index: 20;
-}
-
-#mom {
-	height: 300px;
-	position: absolute;
-	left: 700px;
-	top: 100px;
-	z-index: 1;
-}
-
-.hearts {
-	position: absolute;
-	margin: 0;
-	top: -1000px;
-	display: hidden;
-	z-index: 0;
-	animation-name: heartsfly;
-	animation-iteration-count: infinite;
-}
-
-#heart1 {
-	height: 100px;
-	left: 1700px;
-}
-
-#heart2 {
-	height: 50px;
-	left: 1000px;
-	animation-duration: 58s;
-	animation-delay: 5s;
-}
-
-#heart3 {
-	height: 200px;
-	left: 300px;
-	animation-name: heartsfly;
-	animation-duration: 45s;
-	animation-delay: 10s;
-}
-
-#heart4 {
-	height: 120px;
-	position: absolute;
-	left: 400px;
-	animation-name: heartsfly;
-	animation-duration: 47s;
-	animation-delay: 13s;
-}
-
-#heart5 {
-	height: 80px;
-	top: 1000px;
-	left: 140px;
-	animation-duration: 40s;
-	animation-delay: 3s;
-}
-
-#heart6 {
-	height: 180px;
-	top: 1000px;
-	left: 900px;
-	animation-duration: 45s;
-	animation-delay: 3s;
-}
-
-#heart7 {
-	height: 60px;
-	top: 1000px;
-	left: 100px;
-	animation-duration: 50s;
-	animation-delay: 35s;
-}
-
-#heart8 {
-	height: 100px;
-	top: 1000px;
-	left: 690px;
-	animation-duration: 38s;
-	animation-delay: 22s;
+#colors{
+    position: absolute;
+    margin: 0;
+    height: 300px;
+    z-index: 10;
+    left: 100px;
 }
 
 
-#heart9 {
-	height: 100px;
-	top: 1000px;
-	left: 200px;
-	animation-duration: 39s;
-	animation-delay: 42s;
+#rocket1{
+    position: absolute;
+    margin: 0;
+    top: 1000px;
+    z-index: 10;
+    height: 1300px;
+    left: 1000px;
+    animation-name: rocketlaunch;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    z-index: 70;
+    animation-delay: 10s;
 }
 
-#heart10 {
-	height: 100px;
-	top: 1000px;
-	left: 90px;
-	animation-duration: 39s;
-	animation-delay: 12s;
+@keyframes rocketlaunch{
+    0%{
+        top: 1000px;
+        left: 800px;
+    }
+
+    100%{
+        top: -2000px;
+        left: 200px;
+    }
+}
+
+#castle{
+    margin: 0;
+    position: absolute;
+    top: -120px;
+    left: 350px;
+    z-index: 20;
+}
+
+#mom{
+    height: 300px;
+    position: absolute;
+    left: 1700px;
 }
 
 
-@keyframes heartsfly {
-	0% {
-		bottom: -100px;
-	}
 
-	100% {
-		top: -500px;
-		height: 70%;
-	}
+#mom:hover + .hearts{
+    display: block;
+}
+
+
+.hearts{
+    position: absolute;
+    margin: 0;
+    top: 1000px;
+    display: hidden;
+}
+
+#heart1{
+    height: 100px;
+    position: absolute;
+    left: 1700px;
+    display: hidden;
+}
+
+#mom:hover  #heart1{
+    display: block;
+    transition-duration: 5s;
+    height: 200px;
+}
+
+#heart2{
+    height: 50px;
+    position: absolute;
+    left: 2000px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 58s;
+    animation-delay: 10s;
+    margin: 0;
+    z-index: 0;
+}
+
+#heart3{
+    height: 200px;
+    position: absolute;
+    left: 1300px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 45s;
+    animation-delay: 15s;
+    margin: 0;
+    z-index: 50;
+}
+
+#heart4{
+    height: 120px;
+    position: absolute;
+    left: 1400px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 47s;
+    animation-delay: 20s;
+    margin: 0;
+    z-index: 100;
+}
+
+#heart5{
+    height: 80px;
+    position: absolute;
+    top: 1000px;
+    left: 1040px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
+    animation-delay: 25s;
+    margin: 0;
+    z-index: 0;
+}
+
+#heart6{
+    height: 180px;
+    position: absolute;
+    top: 1000px;
+    left: 1900px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 45s;
+    animation-delay: 30s;
+    margin: 0;
+    z-index: 100;
+}
+
+#heart7{
+    height: 60px;
+    position: absolute;
+    top: 1000px;
+    left: 1000px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 50s;
+    animation-delay: 35s;
+    margin: 0;
+    z-index: 0;
+}
+
+#heart8{
+    height: 100px;
+    position: absolute;
+    top: 1000px;
+    left: 1690px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 38s;
+    animation-delay: 22s;
+    margin: 0;
+    z-index: 100;
+}
+
+
+#heart9{
+    height: 100px;
+    position: absolute;
+    top: 1000px;
+    left: 2100px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 39s;
+    animation-delay: 42s;
+    margin: 0;
+    z-index: 100;
+}
+
+#heart10{
+    height: 100px;
+    position: absolute;
+    top: 1000px;
+    left: 900px;
+    animation-name: heartsfly;
+    animation-iteration-count: infinite;
+    animation-duration: 39s;
+    animation-delay: 12s;
+    margin: 0;
+    z-index: 0;
+}
+
+
+@keyframes heartsfly{
+    0%{
+        top: 1000px;
+    }
+    100%{
+        top: -500px;
+        height: +200%;
+    }
 
 }
