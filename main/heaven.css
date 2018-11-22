@@ -1,8 +1,8 @@
 body {
-    width: 4080px;
-    background-image: url(images/heaven_stairs.jpg);
-    background-repeat: none;
-    background-size: 100% 4;
+	background-size: 100% 4;
+	background-image: url(images/heaven_stairs.jpg);
+	background-repeat: no-repeat;
+	background-attachment: absolute;
 }
 
 #info-box2 {
@@ -15,6 +15,14 @@ body {
     left: 3000px;
     top: 450px;
     width: 500px;
+}
+
+h4 {
+	font-family: "Courier"
+}
+
+#logo{
+	z-index: 1000;
 }
 
 .window {
@@ -75,15 +83,15 @@ body {
 }
 
 #wing1 {
-    top: 450px;
-    left: 190px;
+    bottom: 100px;
+    left: 210px;
     position: absolute;
     width: 550px
 }
 
 #wing2 {
-    top: 450px;
-    left: 800px;
+    bottom: 100px;
+    left: 780px;
     position: absolute;
     width: 450px;
 }
@@ -91,21 +99,21 @@ body {
 #morganfreeman-picture {
     position: absolute;
     left: 540px;
-    top: 500px;
+	bottom: 0;
     height: 400px;
 }
 
 #halo1 {
     position: absolute;
     left: 675px;
-    top: 350px;
+    bottom: 350px;
     animation: haloMove 10s ease infinite;
     width: 200px;
 }
 
 @keyframes haloMove {
     25% {
-        top: 370px;
+        bottom: 370px;
     }
 
     40% {
@@ -117,7 +125,7 @@ body {
     }
 
     75% {
-        top: 370px;
+        bottom: 370px;
     }
 
     90% {
@@ -125,6 +133,7 @@ body {
     }
 
     100% {
+        transform: rotatey(0deg);
         transform: rotatey(0deg);
     }
 }
@@ -174,7 +183,7 @@ body {
 
 #handBottom {
     position: absolute;
-    top: 480px;
+    bottom: 0;
     left: 500px;
     width: 400px;
 }
