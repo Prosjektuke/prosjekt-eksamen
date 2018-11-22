@@ -247,7 +247,6 @@ a.buttons {
 
 #maincontent {
 	position: fixed;
-	;
 	margin: 0;
 	left: 10%;
 	top: 30%;
@@ -273,51 +272,260 @@ a.buttons {
 }
 
 #box1 {
+	background-color:rgb(93, 206, 255);
 	left: 2%;
 }
 
 #box2 {
 	left: 2%;
+	background-color:rgb(255, 185, 191);
 }
 
 #box3 {
+	background-color:rgb(40, 40, 200);
 	left: 2%;
 }
 
-.box:hover {
-	background-color: yellow;
-}
 
-.boximages {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	opacity: 0.8;
+.boximages1 {
 	z-index: 50;
 	position: absolute;
 }
 
-.boxoverlay {
-	margin: 0;
-	position: fixed;
-	width: 100%;
-	background-color: rgb(255, 40, 40);
+
+
+.boximages2{
+	z-index: 50;
+	position: absolute;
+}
+
+
+.boximages3{
+	z-index: 50;
+	position: absolute;
+}
+
+#morganfreeman{
+	height: 230px;
+	top: 35px;
+	left: 10px;
 	z-index: 100;
+	animation-name: morgan-moving;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+
+}
+#wingleft{
+	height: 130px;
+	top: 50px;
+	left: -80px;
+	animation-name: wings-moving;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+
 }
 
-#imgbox2 {
-	position: relative;
-	left: -18px;
+
+#wingright{
+	height: 130px;
+	top: 50px;
+	left: 170px;
+	animation-name: wings-moving;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
 }
 
-.boxoverlay {
-	margin: 0;
-	position: relative;
-	width: 100px;
+#halo{
+	height: 130px;
+	top: -40px;
+	left: 88px;
+	animation-name: halo-moving;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+}
+
+@keyframes morgan-moving{
+	0%{
+		top: 800px;
+	}
+	30%{
+		top: 35px;
+	}
+	60%{
+		top: 40px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+@keyframes wings-moving{
+	0%{
+		top: 800px;
+	}
+	30%{
+		top: 50px;
+	}
+	60%{
+		top: 55px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+
+
+
+@keyframes halo-moving{
+	0%{
+		top: 800px;
+	}
+	30%{
+		top: -40px;
+	}
+	50%{
+		top: -45px;
+	}
+	100%{
+		top: -300px;
+	}
+}
+
+#dragon{
+	height: 130px;
+	top: 50px;
+	left: 8px;
+	z-index: 70;
+	animation-name: dragon-moving;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+}
+
+#castle{
+	height: 130px;
+	top: 79px;
+	left: 108px;
+	z-index: 60;
+	animation-name: castle-moving;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+}
+
+#rainbow{
+	height: 130px;
+	top: 95px;
+	left: 78px;
+	animation-name: rainbow-moving;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+}
+@keyframes rainbow-moving{
+	0%{
+		top: 800px;
+	}
+	50%{
+		top: 100px;
+	}
+	60%{
+		top: 100px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+@keyframes castle-moving{
+	0%{
+		top: 800px;
+	}
+	30%{
+		top: 79px;
+	}
+	60%{
+		top: 79px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+
+@keyframes dragon-moving{
+	0%{
+		top: 800px;
+		left: -100px
+	}
+	30%{
+		top: 60px;
+	}
+	50%{
+		top: 60px;
+		left: 30px;
+	}
+	100%{
+		top: 30px;
+		left: 400px;
+	}
+}
+
+
+#diver{
 	height: 100px;
-	background-color: rgb(255, 40, 40);
-	z-index: 100;
+	top: 40px;
+	left: 48px;
+	animation-name: diver;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	z-index: 60;
 }
+
+#sand{
+	height: 130px;
+	top: 140px;
+	left: 0px;
+	animation-name: sand;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	z-index: 60;
+}
+
+#atlantis{
+	height: 100%;
+	z-index: 50;
+}
+@keyframes sand{
+	0%{
+		top: 800px;
+	}
+	30%{
+		top: 120px;
+	}
+	50%{
+		top: 120px;
+	}
+	100%{
+		top: 300px;
+	}
+}
+
+@keyframes diver{
+	0%{
+		top: 800px;
+	}
+	30%{
+		top: 30px;
+	}
+	50%{
+		top: 30px;
+		left: 48px;
+	}
+	100%{
+		top: 30px;
+		left: 400px;
+	}
+}
+
 
 #tunnelanimation {
 	position: fixed;
@@ -334,23 +542,46 @@ a.buttons {
 }
 
 #tunnelinside1 {
-	left: 0;
+	left: 3750;
 	animation-name: tunnel-move;
 }
 
 #tunnelinside2 {
-	left: 1875px;
+	left: 3750px;
 	animation-name: tunnel-move;
+	animation-delay: 2s
 }
+
 
 #tunnelinside3 {
 	left: 3750px;
 	animation-name: tunnel-move2;
+	animation-delay: 4s;
 }
 
 #tunnelinside4 {
-	left: 5625px;
+	left: 3750px;
 	animation-name: tunnel-move2;
+}
+
+#tunnelinside5{
+	left: 3750px;
+	animation-name: tunnel-move;
+	animation-delay: 3s;
+}
+
+#tunnelinside6{
+	left: 3750px;
+	animation-name: tunnel-move3;
+	animation-delay: 6s;
+	animation-duration: 14s;
+}
+
+#tunnelinside7{
+	left: 3750px;
+	animation-name: tunnel-move4;
+	animation-delay: 0s;
+	animation-duration: 7s;
 }
 
 @keyframes tunnel-move {
@@ -358,18 +589,38 @@ a.buttons {
 		left: 1875px;
 	}
 	100%{
-		left: -2000px;
+		left: -2625px;
 	}
 }
 
 @keyframes tunnel-move2 {
 	0%{
-		left: 0;
+		left: 2500px;
 	}
 	100% {
-		left: -3500px;
+		left: -2000px;
 	}
 }
+
+@keyframes tunnel-move3{
+	0%{
+		left: 7500px;
+		
+	}
+	100%{
+		left: -1500px;
+	}
+}
+
+@keyframes tunnel-move4{
+	0%{
+		left: 0px;
+	}
+	100%{
+		left: -4500px;
+	}
+}
+
 
 
 #trainfrontpage {
@@ -377,4 +628,35 @@ a.buttons {
 	bottom: 30px;
 	left: 400px;
 	margin: 0;
+}
+
+
+@keyframes freeman-popup{
+	0%{
+		bottom: -200px;
+	}
+
+	100%{
+		bottom: 0px;
+	}
+}
+
+@keyframes dragon-popup{
+	0%{
+		bottom: -200px;
+	}
+
+	100%{
+		bottom: 0px;
+	}
+}
+
+@keyframes astronaut-popup{
+	0%{
+		bottom: -200px;
+	}
+
+	100%{
+		bottom: 0px;
+	}
 }
