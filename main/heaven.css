@@ -1,3 +1,4 @@
+/*Ansvarsområde til Sofie Jønsson*/
 body {
     width: 4080px;
     background-image: url(images/heaven_stairs.jpg);
@@ -5,23 +6,28 @@ body {
     background-size: 100% 4;
 }
 
-h4{
-	font-family: "Geneva";
+/*Font på teksten*/
+h4 {
+    font-family: "Geneva";
 }
 
+/*Skjuler lydavspillerne*/
 #heavensound {
     opacity: 0;
 }
-#logo{
-	z-index: 1000;
+
+#logo {
+    z-index: 1000;
 }
 
+/*Første tekstboks*/
 #info-box2 {
     left: 2400px;
     top: 650px;
     width: 500px;
 }
 
+/*Andre tekstboks*/
 #info-box3 {
     left: 3000px;
     top: 450px;
@@ -57,6 +63,7 @@ h4{
     width: 400px;
 }
 
+/*Animasjon for sky som beveger seg nederst på siden*/
 @keyframes cloudMove {
     0% {
         bottom: 0px;
@@ -99,10 +106,11 @@ h4{
     width: 450px;
 }
 
+/*Morgan Freeman*/
 #morganfreeman-picture {
     position: absolute;
     left: 540px;
-	bottom: 0;
+    bottom: 0;
     height: 400px;
 }
 
@@ -114,6 +122,7 @@ h4{
     width: 200px;
 }
 
+/*Animasjon for glorie/halo som beveger seg over Morgan Freeman*/
 @keyframes haloMove {
     25% {
         bottom: 370px;
@@ -140,6 +149,7 @@ h4{
     }
 }
 
+/*Michael Jackson*/
 #michael {
     position: absolute;
     top: 140px;
@@ -148,6 +158,7 @@ h4{
     width: 150px;
 }
 
+/*Amy Winehouse*/
 #amy {
     position: absolute;
     top: 100px;
@@ -157,6 +168,7 @@ h4{
     animation: amyMove 10s ease infinite;
 }
 
+/*Animasjon for Amy Winehouse*/
 @keyframes amyMove {
     0% {
         top: 100px;
@@ -185,7 +197,7 @@ h4{
 
 #handBottom {
     position: absolute;
-	bottom: 0;
+    bottom: 0;
     left: 500px;
     width: 400px;
 }
