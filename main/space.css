@@ -28,9 +28,6 @@ h4 {
 #houstonsound {
 	opacity: 0;
 }
-#bottom-line {
-	background-color: rgb(200, 200, 200, 0.3) !important;
-}
 
 #logo {
 	z-index: 1000;
