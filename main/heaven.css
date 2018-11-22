@@ -9,6 +9,13 @@ h4{
 	font-family: "Geneva";
 }
 
+#heavensound {
+    opacity: 0;
+}
+#logo{
+	z-index: 1000;
+}
+
 #info-box2 {
     left: 2400px;
     top: 650px;

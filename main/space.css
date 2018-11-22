@@ -23,23 +23,31 @@ h4 {
 	font-size: 14px;
 }
 
+#houstonsound {
+	opacity: 0;
+}
 #bottom-line {
 	background-color: rgb(200, 200, 200, 0.3) !important;
 }
 
+#logo {
+	z-index: 1000;
+}
+
+/* Id'er for planeter */
 #jupiter {
 	position: absolute;
 	bottom: 0;
-	left: 1400px;
+	left: 1500px;
 	height: 400px;
-	top: 0;
+	top: 15px;
 
 }
 
 #earth {
 	position: absolute;
 	left: 2100px;
-	top: 40px;
+	top: 8px;
 	height: 300px;
 
 }
@@ -48,18 +56,19 @@ h4 {
 	position: absolute;
 	bottom: 0;
 	left: 2700px;
-	top: 210px;
+	top: 150px;
 	height: 240px;
 
 }
 
 #saturn {
 	position: absolute;
-	top: 430px;
+	top: 0px;
 	left: 3300px;
 
 }
 
+/* Id for astronaut */
 #astronaut {
 	position: absolute;
 	bottom: 0;
@@ -67,9 +76,11 @@ h4 {
 	top: 200px;
 	height: 100px;
 	animation: astronautMove 10s ease forwards infinite;
-	animation-delay: 7s;
+	animation-delay: 3s;
 }
 
+
+/* animasjonen til astronauten */
 @keyframes astronautMove {
 	0% {
 		left: 1366px;
